@@ -1,8 +1,10 @@
-import React, { FC, useEffect } from 'react'
+import { FC, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux';
 import { REGISTER_PATHNAME ,MANAGE_INDEX_PATHNAME} from '../router';
 import styles from './Login.module.scss'
-import { loginService } from '../services/user';
+import { loginService,getUserInfoService } from '../services/user';
+import { loginReducer,UserStateType } from '../store/userReducer';
 import { setToken } from '../utils/user-token';
 import { useRequest } from 'ahooks';
 import { Typography, Space, Form, Input, Button, Checkbox, message } from 'antd';
@@ -32,6 +34,7 @@ function getUserInfoFromStorage() {
 
 const Login: FC = () => {
     const nav = useNavigate();
+    const dispatch=useDispatch();
 
     const [form] = Form.useForm();
 
@@ -44,13 +47,16 @@ const Login: FC = () => {
     }, []);
 
     const {run}=useRequest(async (username:string,password:string)=>{
-        const data=await loginService(username,password);
+        const data=await loginService(username,password);      //向后端发送登录请求，返回一个token
         return data;
     },{
         manual:true,
-        onSuccess:(result)=>{
+        onSuccess:async (result)=>{
              const {token=''}=result;
              setToken(token);                //存储token
+             //不同于注册，登录时需要将用户信息存储到redux的store中
+             const userInfo=await getUserInfoService();       //在登录后向后端发送带消息头的请求，返回用户信息
+             dispatch(loginReducer(userInfo as UserStateType));     //将用户信息存储到redux的store中
              
              message.success("登录成功");
              nav(MANAGE_INDEX_PATHNAME);     //导航到“我的问卷”

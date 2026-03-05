@@ -17,7 +17,7 @@ export const userSlice=createSlice({
     reducers:{
         loginReducer:(state:UserStateType,action:PayloadAction<UserStateType>)=>{
             return action.payload;      //设置username和nickname到redux的store中
-            //此处没用用到immer
+            //此处没用到immer
         },
         logoutReducer:()=> INIT_STATE      //登出即返回初始状态
     }

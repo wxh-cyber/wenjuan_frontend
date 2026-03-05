@@ -17,7 +17,7 @@ const UserInfo: FC = () => {
     // const { data } = useRequest(getUserInfoService);
     // const { username, nickname } = data || {};
     const {username,nickname}=useGetUserInfo();       //从redux store中获取用户信息
-    const token=getToken();
+    // const token=getToken();
 
     function logout(){
         dispatch(logoutReducer());     //清空了redux中的user信息
@@ -44,7 +44,8 @@ const UserInfo: FC = () => {
     return (
         <div>
             {/* 采用token判断登录状态，可以在退出之后，组件进行响应式更新 */}
-            {token ? UserInfo : Login}
+            {/* 由于在引入redux状态管理之后，已经可以清空客户端中存储的user信息，所以此处采用username也可以实现响应式更新。 */}
+            {username ? UserInfo : Login}
         </div>
     )
 }
