@@ -3,6 +3,7 @@ import React, { FC, useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { changeSelectedId } from '../../../store/componentsReducer';
 import useLoadQuestionData from '../../../hooks/useLoadQuestionData';
+import EditHeader from './EditHeader';
 import EditCanvas from './EditCanvas';
 import LeftPanel from './LeftPanel';
 import RightPanel from './RightPanel';
@@ -19,7 +20,9 @@ const Edit: FC = () => {
 
     return (
         <div className={styles.container}>
-            <div style={{ backgroundColor: '#fff', height: '40px' }}>Header</div>
+            <div style={{ backgroundColor: '#fff', height: '60px' }}>
+                <EditHeader />
+            </div>
             <div className={styles['content-wrapper']}>
                 <div className={styles.content}>
                     <div className={styles.left}>

@@ -20,7 +20,7 @@ const ComponentProp: FC = () => {
         return <NoProp />
     }
 
-    const {type,props}=selectedComponent;
+    const {type,props,isLocked,isHidden}=selectedComponent;
     const componentConfig=getComponentConfigByType(type);
     if(!componentConfig){       //如果没有获取到组件配置，返回NoProp
         return <NoProp />
@@ -36,7 +36,8 @@ const ComponentProp: FC = () => {
     const {PropComponent}=componentConfig;
 
     return (
-        <PropComponent {...props} onChange={changeProps} />
+        //如果表单被锁定或者被隐藏，则不能使用右侧进行编辑
+        <PropComponent {...props} onChange={changeProps} disabled={isLocked || isHidden} />
     )
 }
 

@@ -4,6 +4,7 @@ export type QuestionTitlePropsType={
     isCenter?:boolean;
 
     onChange?:(props:QuestionTitlePropsType)=>void;
+    disabled?:boolean;      //禁用表单的属性
 }
 
 export const QuestionTitleDefaultProps:QuestionTitlePropsType={

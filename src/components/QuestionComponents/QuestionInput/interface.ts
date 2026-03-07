@@ -3,6 +3,7 @@ export type QuestionInputPropsType={
     placeholder?:string,
 
     onChange?:(newProps:QuestionInputPropsType)=>void,
+    disabled?:boolean;      //禁用表单的属性
 }
 
 export const QuestionInputDefaultProps:QuestionInputPropsType={
