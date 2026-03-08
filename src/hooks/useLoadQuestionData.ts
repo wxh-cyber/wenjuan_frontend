@@ -1,46 +1,46 @@
-import {useEffect} from 'react';
-import {useParams} from 'react-router-dom';
-import {useDispatch} from 'react-redux';
-import {useRequest} from 'ahooks';
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useRequest } from 'ahooks';
 import { getQuestionService } from '../services/question';
 import { resetComponents } from '../store/componentsReducer';
 
-function useLoadQuestionData(){
-    const {id=''}=useParams();
-    const dispatch=useDispatch();
+function useLoadQuestionData() {
+    const { id = '' } = useParams();
+    const dispatch = useDispatch();
 
     //Ajax加载
-    const {data,loading,error,run}=useRequest(async (id:string)=>{
-        if(!id) throw new Error('没有问卷Id!');
-        const data=await getQuestionService(id);
+    const { data, loading, error, run } = useRequest(async (id: string) => {
+        if (!id) throw new Error('没有问卷Id!');
+        const data = await getQuestionService(id);
         return data;
-    },{
-        manual:true
-    })
+    }, {
+        manual: true
+    });
 
     //根据获取的data设置redux store
-    useEffect(()=>{
-        if(!data) return;
-        
-        const {title='',componentList=[]}=data;
+    useEffect(() => {
+        if (!data) return;
+
+        const { title = '', componentList = [] } = data;
 
         //获取默认的selectedId
-        let selectedId='';
-        if(componentList.length>0){
-            selectedId=componentList[0].fe_id;     //默认选中第一个组件
+        let selectedId = '';
+        if (componentList.length > 0) {
+            selectedId = componentList[0].fe_id;     //默认选中第一个组件
         }
 
         //把componentList存储到redux store中
-        dispatch(resetComponents({componentList,selectedId,copiedComponent:null}));
-    },[data]);
+        dispatch(resetComponents({ componentList, selectedId, copiedComponent: null }));
+    }, [data]);
 
     //判断id变化，执行Ajax加载问卷数据
-    useEffect(()=>{
+    useEffect(() => {
         //加载问卷数据
         run(id);
-    },[id]);
+    }, [id]);
 
-    return {loading,error};
+    return { loading, error };
 }
 
 export default useLoadQuestionData;
