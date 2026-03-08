@@ -1,14 +1,22 @@
 import { FC } from "react";
 import { Button, Space, Tooltip } from 'antd';
-import { DeleteOutlined, EyeInvisibleOutlined, LockOutlined } from "@ant-design/icons";
+import { DeleteOutlined, 
+    EyeInvisibleOutlined,
+     LockOutlined,
+     CopyOutlined,
+    BlockOutlined } from "@ant-design/icons";
 import { useDispatch } from "react-redux";
-import { removeSelectedComponent, changeComponentHidden, toggleComponentLocked } from "../../../store/componentsReducer";
+import { removeSelectedComponent, 
+    changeComponentHidden, 
+    toggleComponentLocked,
+    copySelectedComponent,
+    pasteCopiedComponent } from "../../../store/componentsReducer";
 import useGetComponentInfo from "../../../hooks/useGetComponentsInfo";
 
 const EditToolBar: FC = () => {
     const dispatch = useDispatch();
 
-    const { selectedId, selectedComponent } = useGetComponentInfo();
+    const { selectedId, selectedComponent,copiedComponent } = useGetComponentInfo();
     const { isLocked } = selectedComponent || {};
 
     //删除组件
@@ -25,6 +33,18 @@ const EditToolBar: FC = () => {
     function handleLock() {
         dispatch(toggleComponentLocked({ fe_id: selectedId }));
     }
+
+    //复制
+    function copy(){
+        dispatch(copySelectedComponent());
+    }
+
+    //粘贴
+    function paste(){
+        dispatch(pasteCopiedComponent());
+    }
+
+
 
     return (
         <Space>
@@ -48,6 +68,21 @@ const EditToolBar: FC = () => {
                     icon={<LockOutlined />}
                     onClick={handleLock}
                     type={isLocked ? "primary" : "default"}
+                ></Button>
+            </Tooltip>
+            <Tooltip title="复制">
+                <Button
+                    shape="circle"
+                    icon={<CopyOutlined />}
+                    onClick={copy}
+                ></Button>
+            </Tooltip>
+            <Tooltip title="粘贴">
+                <Button
+                shape="circle"
+                icon={<BlockOutlined />}
+                onClick={paste}
+                disabled={!copiedComponent}
                 ></Button>
             </Tooltip>
         </Space>

@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import useGetComponentsInfo from '../../../hooks/useGetComponentsInfo';
 import { getComponentConfigByType } from '../../../components/QuestionComponents';
 import { ComponentInfoType, changeSelectedId } from '../../../store/componentsReducer';
+import useBindCanvasKeyPress from '../../../hooks/useBindCanvasKeyPress';
 import styles from './EditCanvas.module.scss';
 
 //临时静态展示一下Title和Input的效果
@@ -35,6 +36,9 @@ const EditCanvas: FC<PropsType> = ({ loading }) => {
         dispatch(changeSelectedId(id));
     }
 
+    //绑定快捷键
+    useBindCanvasKeyPress();
+    
     if (loading) return (
         <div style={{ textAlign: 'center', marginTop: '24px' }}>
             <Spin />

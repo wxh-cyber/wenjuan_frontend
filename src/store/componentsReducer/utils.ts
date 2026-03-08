@@ -1,4 +1,4 @@
-import { ComponentInfoType } from ".";
+import { ComponentInfoType, ComponentsStateType } from ".";
 
 /** 
  * @description 计算删除组件后的下一个选中组件的id
@@ -29,4 +29,25 @@ export function getNextSelectedId(fe_id:string,componentList:ComponentInfoType[]
     }
 
     return newSelectedId;
+}
+
+/**
+ * @description 插入新组件
+ * @param draft 组件状态
+ * @param newComponent 新组件
+ */
+export function insertNewComponent(draft:ComponentsStateType,newComponent:ComponentInfoType){
+    const {selectedId,componentList}=draft;
+    const index=componentList.findIndex(c=>c.fe_id===selectedId);
+    
+    if(index<0){
+        //未选中任何组件
+        draft.componentList.push(newComponent);
+    }else{
+        //选中了某个组件
+        draft.componentList.splice(index+1,0,newComponent);
+    }
+
+    //更新selectedId
+    draft.selectedId=newComponent.fe_id;
 }

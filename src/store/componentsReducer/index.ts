@@ -1,6 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ComponentPropsType } from '../../components/QuestionComponents/index';
-import { getNextSelectedId } from './utils';
+import { getNextSelectedId, insertNewComponent } from './utils';
+import cloneDeep from 'lodash.clonedeep';
+import { nanoid } from 'nanoid';
 
 export type ComponentInfoType = {
     fe_id: string;      //前端生成的id，服务端MongoDB不认这种格式，所以自定义一个fe_id
@@ -14,11 +16,13 @@ export type ComponentInfoType = {
 export type ComponentsStateType = {
     selectedId: string;
     componentList: Array<ComponentInfoType>;
+    copiedComponent: ComponentInfoType | null;
 }
 
 const INIT_STATE: ComponentsStateType = {
     selectedId: '',
-    componentList: []
+    componentList: [],
+    copiedComponent: null           //默认初始化时不拷贝任何信息
 };
 
 export const componentsSlice = createSlice({
@@ -38,17 +42,7 @@ export const componentsSlice = createSlice({
         //添加新组件
         addComponent: (draft: ComponentsStateType, action: PayloadAction<ComponentInfoType>) => {
             const newComponent = action.payload;       //将参数保存为新的component
-            const { selectedId, componentList } = draft;
-            const index = componentList.findIndex(c => c.fe_id === selectedId);      //获取当前选中元素的索引
-
-            if (index < 0) {
-                //未选中任何组件
-                draft.componentList.push(newComponent);
-            } else {
-                draft.componentList.splice(index + 1, 0, newComponent);
-            }
-
-            draft.selectedId = newComponent.fe_id;
+            insertNewComponent(draft, newComponent);
         },
 
         //修改组件属性
@@ -69,43 +63,81 @@ export const componentsSlice = createSlice({
             const { componentList = [], selectedId: removeId } = draft;
 
             //重新计算selectedId
-            const newSelectedId=getNextSelectedId(removeId,componentList);
-            draft.selectedId=newSelectedId;
+            const newSelectedId = getNextSelectedId(removeId, componentList);
+            draft.selectedId = newSelectedId;
 
             const index = componentList.findIndex(c => c.fe_id === removeId);
             componentList.splice(index, 1);
         },
 
         //隐藏/选中 组件
-        changeComponentHidden:(draft:ComponentsStateType,action:PayloadAction<{fe_id:string,isHidden:boolean}>)=>{
-            const {componentList}=draft;
-            const {fe_id,isHidden}=action.payload;
+        changeComponentHidden: (draft: ComponentsStateType, action: PayloadAction<{ fe_id: string, isHidden: boolean }>) => {
+            const { componentList } = draft;
+            const { fe_id, isHidden } = action.payload;
 
             //重新计算selectedId
-            let newSelectedId='';
-            if(isHidden){
+            let newSelectedId = '';
+            if (isHidden) {
                 //要隐藏
-                newSelectedId=getNextSelectedId(fe_id,componentList);
-            }else{
+                newSelectedId = getNextSelectedId(fe_id, componentList);
+            } else {
                 //要显示
-                newSelectedId=fe_id;
+                newSelectedId = fe_id;
             }
-            draft.selectedId=newSelectedId;
+            draft.selectedId = newSelectedId;
 
-            const curComp=componentList.find(c=>c.fe_id===fe_id);
-            if(curComp){
-                curComp.isHidden=isHidden;
+            const curComp = componentList.find(c => c.fe_id === fe_id);
+            if (curComp) {
+                curComp.isHidden = isHidden;
             }
         },
 
         // 锁定/解锁 组件
-        toggleComponentLocked:(draft:ComponentsStateType,action:PayloadAction<{fe_id:string}>)=>{
-            const {fe_id}=action.payload;
+        toggleComponentLocked: (draft: ComponentsStateType, action: PayloadAction<{ fe_id: string }>) => {
+            const { fe_id } = action.payload;
 
-            const curComp=draft.componentList.find(c=>c.fe_id===fe_id);
-            if(curComp){
-                curComp.isLocked=!curComp.isLocked;
+            const curComp = draft.componentList.find(c => c.fe_id === fe_id);
+            if (curComp) {
+                curComp.isLocked = !curComp.isLocked;
             }
+        },
+
+        //拷贝当前选中的组件
+        copySelectedComponent: (draft: ComponentsStateType) => {
+            const { selectedId, componentList = [] } = draft;
+            const selectedComponent = componentList.find(c => c.fe_id === selectedId);
+            if (!selectedComponent) return;
+            draft.copiedComponent = cloneDeep(selectedComponent);      //深拷贝
+        },
+
+        //粘贴组件
+        pasteCopiedComponent: (draft: ComponentsStateType) => {
+            const { copiedComponent } = draft;
+            if (!copiedComponent) return;
+
+            //将fe_id修改为新的id
+            copiedComponent.fe_id = nanoid();
+            insertNewComponent(draft, copiedComponent);
+        },
+
+        //选中上一个
+        selectPrevComponent: (draft: ComponentsStateType) => {
+            const { selectedId, componentList = [] } = draft;
+            const selectedIndex = componentList.findIndex(c => c.fe_id === selectedId);
+
+            if (selectedIndex <= 0) return;       //如果当前选中的组件是第一个，或者根本未选中任何组件，则不执行选中上一个
+            draft.selectedId = componentList[selectedIndex - 1].fe_id;
+        },
+
+        //选中下一个
+        selectNextComponent: (draft: ComponentsStateType) => {
+            const { selectedId, componentList = [] } = draft;
+            const selectedIndex = componentList.findIndex(c => c.fe_id === selectedId);
+
+            if (selectedIndex < 0) return;       //未选中任何组件，则不执行
+            if (selectedIndex + 1 === componentList.length) return;     //已经选中了最后一个，无法再向下选中
+
+            draft.selectedId = componentList[selectedIndex + 1].fe_id;
         }
     }
 });
@@ -116,6 +148,10 @@ export const { resetComponents,
     changeComponentProps,
     removeSelectedComponent,
     changeComponentHidden,
-    toggleComponentLocked } = componentsSlice.actions;
+    toggleComponentLocked,
+    copySelectedComponent,
+    pasteCopiedComponent,
+    selectPrevComponent,
+    selectNextComponent } = componentsSlice.actions;
 
 export default componentsSlice.reducer;
