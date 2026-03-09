@@ -1,47 +1,50 @@
 .container {
-    display:flex;
-    flex-direction:column;
-    height:100vh;
-    background-color:#f0f2f5;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f2f5;
 }
 
 .content-wrapper {
-    flex:auto;
-    padding:12px 0;
+    flex: auto;
+    padding: 12px 0;
+    background-color: #f0f2f5;  // 确保背景色填充
+    overflow: auto;  // 允许内容区域滚动
 }
 
 .content {
-    margin:0 24px;
-    display:flex;
-    height:100%;
+    margin: 0 24px;
+    display: flex;
+    min-height: 100%;  // 确保内容区域至少填满父容器
 
     .left {
-        width:285px;
-        background-color:#fff;
-        padding:0 12px;
+        width: 295px;
+        background-color: #fff;
+        padding: 0 12px;
     }
 
-    .main{
-        flex:1;
-        position:relative;
-        overflow:hidden;       //最外层不发生滚动
+    .main {
+        flex: 1;
+        position: relative;
+        overflow: hidden;  // 最外层不发生滚动
 
         .canvas-wrapper {
-            position:absolute;
-            margin:50px;
-            width:550px;
-            height:712px;
-            top:50%;
-            left:50%;
-            transform:translateX(-50%) translateY(-50%);
-            overflow:auto;       //内层发生滚动
+            position: absolute;
+            margin: 50px;
+            width: 550px;
+            height: 712px;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            overflow: auto;  // 内层发生滚动
             box-shadow: 0 2px 10px #0000001f;
+            background-color: #fff;  // 画布背景为白色
         }
     }
 
     .right {
-        width:300px;
-        background-color:#fff;
-        padding:0 12px;
+        width: 300px;
+        background-color: #fff;
+        padding: 0 12px;
     }
 }

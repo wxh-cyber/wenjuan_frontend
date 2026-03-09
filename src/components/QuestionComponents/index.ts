@@ -37,6 +37,7 @@ const componentConfigList: ComponentConfigType[] = [
     QuestionParagraphConfig,
     QuestionInfoConfig,
     QuestionTextareaConfig,
+    QuestionRadioConfig,
 ];
 
 //组件分组

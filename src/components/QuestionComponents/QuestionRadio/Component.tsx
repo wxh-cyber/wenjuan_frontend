@@ -12,10 +12,10 @@ const Component:FC<QuestionRadioPropsType> = (props:QuestionRadioPropsType)=>{
             <Paragraph strong>{title}</Paragraph>
             <Radio.Group value={value} vertical={isVertical?true:false}>
                  {
-                    options.map(opt =>{
+                    options.map((opt, index) =>{
                         const {value,text} = opt;
                         return (
-                            <Radio key={value} value={value}>{text}</Radio>
+                            <Radio key={`${value}-${index}`} value={value}>{text}</Radio>
                         )
                     })
                  }
