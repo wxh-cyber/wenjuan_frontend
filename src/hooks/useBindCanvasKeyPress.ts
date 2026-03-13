@@ -1,5 +1,6 @@
 import { useKeyPress } from "ahooks";
 import { useDispatch } from "react-redux";
+import { ActionCreators } from "redux-undo";
 import {
     removeSelectedComponent,
     copySelectedComponent,
@@ -53,6 +54,22 @@ function useBindCanvasKeyPress() {
     useKeyPress('downarrow', () => {
         if (!isActiveElementValid()) return;       //如果当前光标所处位置不合法，则不执行选中下一个
         dispatch(selectNextComponent());
+    });
+
+    //撤销
+    useKeyPress(['ctrl.z','meta.z'],()=>{
+        if(!isActiveElementValid()) return;       //如果当前光标所处位置不合法，则不执行撤销
+        dispatch(ActionCreators.undo());
+    },{
+        exactMatch:true       //必须严格匹配才触发
+    });
+    
+    //重做
+    useKeyPress(['ctrl.shift.z','meta.shift.z'],()=>{
+        if(!isActiveElementValid()) return;       //如果当前光标所处位置不合法，则不执行重做
+        dispatch(ActionCreators.redo());
+    },{
+        exactMatch:true       //必须严格匹配才触发
     });
 }
 
