@@ -4,10 +4,17 @@ import { getComponentConfigByType } from '../../../components/QuestionComponents
 import styles from './ComponentList.module.scss';
 import classNames from 'classnames';
 
-const ComponentList: FC = () => {
+type PropsType = {
+    selectedComponentId: string;
+    setSelectedComponentId: (id: string) => void;
+    setSelectedComponentType: (type: string) => void;
+}
+
+const ComponentList: FC<PropsType> = (props) => {
+    const { selectedComponentId, setSelectedComponentId, setSelectedComponentType } = props;
     const { componentList } = useGetComponentsInfo();
 
-    const [selectedComponentId, setSelectedComponentId] = useState('');
+    //const [selectedComponentId, setSelectedComponentId] = useState('');
 
     return (
         <div className={styles.container}>
@@ -34,7 +41,10 @@ const ComponentList: FC = () => {
                             <div
                                 className={wrapperClassName}
                                 key={fe_id}
-                                onClick={() => setSelectedComponentId(fe_id)}>
+                                onClick={() => {
+                                    setSelectedComponentId(fe_id);
+                                    setSelectedComponentType(type);
+                                }}>
                                 <div className={styles.component}>
                                     <Component {...props} />
                                 </div>

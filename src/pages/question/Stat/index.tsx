@@ -1,10 +1,11 @@
-import React, { FC ,useState} from 'react'
+import { FC ,useState} from 'react'
 import { Spin, Result, Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { useTitle } from 'ahooks';
 import useLoadQuestionData from '../../../hooks/useLoadQuestionData';
 import useGetPageInfo from '../../../hooks/useGetPageInfo';
 import StatHeader from './StatHeader';
+import ComponentList from './ComponentList';
 import styles from './index.module.scss';
 
 const Stat: FC = () => {
@@ -46,7 +47,13 @@ const Stat: FC = () => {
         return (
             <>
             {/* 如果将最外层标签写成div，则内部样式将无法正确显示 */}
-                <div className={styles.left}>左侧</div>
+                <div className={styles.left}>
+                    <ComponentList 
+                        selectedComponentId={selectedComponentId}
+                        setSelectedComponentId={setSelectedComponentId}
+                        setSelectedComponentType={setSelectedComponentType}
+                    />
+                </div>
                 <div className={styles.main}>中间</div>
                 <div className={styles.right}>右侧</div>
             </>
