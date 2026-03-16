@@ -11,7 +11,7 @@ export * from './interface';
 //Input组件的配置
 export default {
     title:'输入框',
-    type:'questionInput',
+    type:'QuestionInput',
     Component,        //画布显示的组件
     PropComponent,      //修改属性
     defaultProps:QuestionInputDefaultProps

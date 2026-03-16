@@ -63,5 +63,10 @@ export const componentConfigGroup = [
 ]
 
 export function getComponentConfigByType(type: string) {
-    return componentConfigList.find(item => item.type === type);
+    if (!type) return undefined;
+    return (
+        //增加了大小写类型兼容
+        componentConfigList.find(item => item.type === type) ||
+        componentConfigList.find(item => item.type.toLowerCase() === type.toLowerCase())
+    );
 }

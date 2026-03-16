@@ -11,7 +11,7 @@ export * from './interface';
 //Title组件的配置
 export default {
     title: '标题',
-    type: 'questionTitle',
+    type: 'QuestionTitle',
     Component,        //画布显示的组件
     PropComponent,      //修改属性
     defaultProps: QuestionTitleDefaultProps
