@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import useGetComponentsInfo from '../../../hooks/useGetComponentsInfo';
 import { getComponentConfigByType } from '../../../components/QuestionComponents';
 import styles from './ComponentList.module.scss';
@@ -13,8 +13,6 @@ type PropsType = {
 const ComponentList: FC<PropsType> = (props) => {
     const { selectedComponentId, setSelectedComponentId, setSelectedComponentType } = props;
     const { componentList } = useGetComponentsInfo();
-
-    //const [selectedComponentId, setSelectedComponentId] = useState('');
 
     return (
         <div className={styles.container}>
@@ -38,13 +36,19 @@ const ComponentList: FC<PropsType> = (props) => {
                         });
 
                         return (
-                            <div
+                            <div  
+                                tabIndex={0}        
                                 className={wrapperClassName}
                                 key={fe_id}
                                 onClick={() => {
                                     setSelectedComponentId(fe_id);
                                     setSelectedComponentType(type);
-                                }}>
+                                }}
+                                onBlur={() => {
+                                    setSelectedComponentId('');
+                                    setSelectedComponentType('');
+                                }}
+                                >
                                 <div className={styles.component}>
                                     <Component {...props} />
                                 </div>

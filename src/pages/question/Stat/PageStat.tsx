@@ -22,7 +22,7 @@ const PageStat: FC<PropsType> = (props: PropsType) => {
     const [page, setPage] = useState(1);
     const [pageSize, setPageSize] = useState(STAT_PAGE_SIZE);
 
-    const [total, setTotal] = useState(0);
+    const [total, setTotal] = useState<number>(0);
     const [list, setList] = useState([]);
 
     const { loading } = useRequest(async () => {
@@ -43,7 +43,7 @@ const PageStat: FC<PropsType> = (props: PropsType) => {
     }, [id]);
 
     const { componentList } = useGetComponentsInfo();
-    const columns = componentList.map(c => {
+    const columns = componentList.filter(c => !c.isHidden).map(c => {
         const { fe_id, title, props = {}, type } = c;
 
         const colTitle = props!.title || title;      //先从props中获取title，如果props中没有title，再从上方的title中进行获取
@@ -51,12 +51,16 @@ const PageStat: FC<PropsType> = (props: PropsType) => {
         return {
             //title:colTitle,       //title也可以是JSX这样的表达式
             title: (<div
+                tabIndex={0}
                 style={{ cursor: 'pointer' }}
                 onClick={() => {
                     setSelectedComponentId(fe_id);
                     setSelectedComponentType(type);
-                }
-                }>
+                }}
+                onBlur={() => {
+                    setSelectedComponentId('');
+                    setSelectedComponentType('');
+                }}>
                 <span style={{ color: fe_id === selectedComponentId ? '#1890ff' : 'inherit' }}>
                     {colTitle}
                 </span>
@@ -105,8 +109,7 @@ const PageStat: FC<PropsType> = (props: PropsType) => {
                     </div>
                 )
             }
-            {!loading && TableElem}
-
+            {!loading&&TableElem}
         </div>
     )
 }

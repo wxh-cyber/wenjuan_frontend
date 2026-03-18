@@ -8,8 +8,8 @@ import QuestionTitleConfig, { QuestionTitlePropsType } from './QuestionTitle';
 import QuestionParagraphConfig, { QuestionParagraphPropsType } from './QuestionParagraph';
 import QuestionInfoConfig, { QuestionInfoPropsType } from './QuestionInfo';
 import QuestionTextareaConfig, { QuestionTextareaPropsType } from './QuestionTextarea';
-import QuestionRadioConfig, { QuestionRadioPropsType } from './QuestionRadio';
-import QuestionCheckboxConfig, { QuestionCheckboxPropsType } from './QuestionCheckbox';
+import QuestionRadioConfig, { QuestionRadioPropsType,QuestionRadioStatPropsType } from './QuestionRadio';
+import QuestionCheckboxConfig, { QuestionCheckboxPropsType,QuestionCheckboxStatPropsType } from './QuestionCheckbox';
 
 //各个组件的PropsType
 //通过交叉类型的方式进行统一整合
@@ -21,6 +21,8 @@ export type ComponentPropsType = QuestionInputPropsType &
     QuestionRadioPropsType &
     QuestionCheckboxPropsType;
 
+//统一，各个组件的统计属性类型
+export type ComponentStatPropsType = QuestionRadioStatPropsType&QuestionCheckboxStatPropsType;
 
 //组件的配置
 export type ComponentConfigType = {
@@ -29,6 +31,7 @@ export type ComponentConfigType = {
     Component: FC<ComponentPropsType>;
     PropComponent: FC<ComponentPropsType>;
     defaultProps: ComponentPropsType;
+    StatComponent?: FC<ComponentStatPropsType>;
 }
 
 //全部组件配置的列表

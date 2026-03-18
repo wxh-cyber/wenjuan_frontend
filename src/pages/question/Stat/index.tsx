@@ -1,4 +1,4 @@
-import { FC ,useState} from 'react'
+import { FC, useState } from 'react'
 import { Spin, Result, Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { useTitle } from 'ahooks';
@@ -7,6 +7,7 @@ import useGetPageInfo from '../../../hooks/useGetPageInfo';
 import StatHeader from './StatHeader';
 import ComponentList from './ComponentList';
 import PageStat from './PageStat';
+import ChartStat from './ChartStat';
 import styles from './index.module.scss';
 
 const Stat: FC = () => {
@@ -16,8 +17,8 @@ const Stat: FC = () => {
     const { title, isPublished } = useGetPageInfo();
 
     //状态提升
-    const [selectedComponentId,setSelectedComponentId]=useState('');
-    const [selectedComponentType,setSelectedComponentType]=useState('');
+    const [selectedComponentId, setSelectedComponentId] = useState('');
+    const [selectedComponentType, setSelectedComponentType] = useState('');
 
     //修改标题
     useTitle(`问卷统计 - ${title}`);
@@ -47,9 +48,9 @@ const Stat: FC = () => {
 
         return (
             <>
-            {/* 如果将最外层标签写成div，则内部样式将无法正确显示 */}
+                {/* 如果将最外层标签写成div，则内部样式将无法正确显示 */}
                 <div className={styles.left}>
-                    <ComponentList 
+                    <ComponentList
                         selectedComponentId={selectedComponentId}
                         setSelectedComponentId={setSelectedComponentId}
                         setSelectedComponentType={setSelectedComponentType}
@@ -62,7 +63,12 @@ const Stat: FC = () => {
                         setSelectedComponentType={setSelectedComponentType}
                     />
                 </div>
-                <div className={styles.right}>右侧</div>
+                <div className={styles.right}>
+                    <ChartStat
+                        selectedComponentId={selectedComponentId}
+                        selectedComponentType={selectedComponentType}
+                    />
+                </div>
             </>
         )
     }
@@ -71,8 +77,8 @@ const Stat: FC = () => {
         <div className={styles.container}>
             <StatHeader />
             <div className={styles['content-wrapper']}>
-                {loading && LoadingElem }
-                {!loading&&<div className={styles.content}>
+                {loading && LoadingElem}
+                {!loading && <div className={styles.content}>
                     {genContentElem()}
                 </div>}
             </div>
