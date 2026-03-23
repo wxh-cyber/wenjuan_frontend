@@ -1,0 +1,350 @@
+0 verbose cli D:\Program_Files\nodejs\node.exe D:\Program_Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.12.0
+3 silly config load:file:D:\Program_Files\nvm\v22.12.0\node_modules\npm\npmrc
+4 silly config load:file:D:\Code\React\React体系课\wenjuan\.npmrc
+5 silly config load:file:C:\Users\Administrator\.npmrc
+6 silly config load:file:D:\Program_Files\node-v24.12.0-win-x64\node-v24.12.0-win-x64\node_global\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--include" "dev"
+9 verbose logfile logs-max:10 dir:D:\Code\React\React体系课\wenjuan\.npm-cache\_logs\2026-03-23T03_29_27_117Z-
+10 verbose logfile D:\Code\React\React体系课\wenjuan\.npm-cache\_logs\2026-03-23T03_29_27_117Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest storybook@^10.3.1
+15 silly packumentCache full:https://registry.npmmirror.com/storybook cache-miss
+16 http fetch GET https://registry.npmmirror.com/npm attempt 1 failed with EACCES
+17 http fetch GET https://registry.npmmirror.com/storybook attempt 1 failed with EACCES
+18 silly fetch manifest @storybook/react-webpack5@^10.3.1
+19 silly packumentCache full:https://registry.npmmirror.com/@storybook%2freact-webpack5 cache-miss
+20 http fetch GET https://registry.npmmirror.com/@storybook%2freact-webpack5 attempt 1 failed with EACCES
+21 silly fetch manifest @storybook/preset-create-react-app@^10.3.1
+22 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fpreset-create-react-app cache-miss
+23 http fetch GET https://registry.npmmirror.com/@storybook%2fpreset-create-react-app attempt 1 failed with EACCES
+24 silly fetch manifest @storybook/addon-a11y@^10.3.1
+25 silly packumentCache full:https://registry.npmmirror.com/@storybook%2faddon-a11y cache-miss
+26 http fetch GET https://registry.npmmirror.com/@storybook%2faddon-a11y attempt 1 failed with EACCES
+27 silly fetch manifest @storybook/addon-docs@^10.3.1
+28 silly packumentCache full:https://registry.npmmirror.com/@storybook%2faddon-docs cache-miss
+29 http fetch GET https://registry.npmmirror.com/@storybook%2faddon-docs attempt 1 failed with EACCES
+30 silly fetch manifest webpack@^5.105.4
+31 silly packumentCache full:https://registry.npmmirror.com/webpack cache-miss
+32 http fetch GET https://registry.npmmirror.com/webpack attempt 1 failed with EACCES
+33 silly fetch manifest eslint-plugin-storybook@^10.3.1
+34 silly packumentCache full:https://registry.npmmirror.com/eslint-plugin-storybook cache-miss
+35 http fetch GET https://registry.npmmirror.com/eslint-plugin-storybook attempt 1 failed with EACCES
+36 silly placeDep ROOT @storybook/addon-a11y@ OK for: wenjuan@0.1.0 want: ^10.3.1
+37 silly placeDep ROOT @storybook/addon-docs@ OK for: wenjuan@0.1.0 want: ^10.3.1
+38 silly placeDep ROOT @storybook/preset-create-react-app@ OK for: wenjuan@0.1.0 want: ^10.3.1
+39 silly placeDep ROOT @storybook/react-webpack5@ OK for: wenjuan@0.1.0 want: ^10.3.1
+40 silly placeDep ROOT eslint-plugin-storybook@ OK for: wenjuan@0.1.0 want: ^10.3.1
+41 silly placeDep ROOT storybook@ OK for: wenjuan@0.1.0 want: ^10.3.1
+42 silly placeDep ROOT webpack@ REPLACE for: wenjuan@0.1.0 want: ^5.105.4
+43 silly fetch manifest fork-ts-checker-webpack-plugin@^6.5.0
+44 silly packumentCache full:https://registry.npmmirror.com/fork-ts-checker-webpack-plugin cache-miss
+45 http fetch GET https://registry.npmmirror.com/fork-ts-checker-webpack-plugin attempt 1 failed with EACCES
+46 silly placeDep node_modules/react-dev-utils fork-ts-checker-webpack-plugin@ OK for: react-dev-utils@12.0.1 want: ^6.5.0
+47 silly fetch manifest typescript@^3.2.1 || ^4
+48 silly packumentCache full:https://registry.npmmirror.com/typescript cache-miss
+49 http fetch GET https://registry.npmmirror.com/typescript attempt 1 failed with EACCES
+50 silly fetch manifest @pmmmwh/react-refresh-webpack-plugin@^0.5.3
+51 silly packumentCache full:https://registry.npmmirror.com/@pmmmwh%2freact-refresh-webpack-plugin cache-miss
+52 http fetch GET https://registry.npmmirror.com/@pmmmwh%2freact-refresh-webpack-plugin attempt 1 failed with EACCES
+53 silly fetch manifest babel-loader@^8.2.3
+54 silly packumentCache full:https://registry.npmmirror.com/babel-loader cache-miss
+55 http fetch GET https://registry.npmmirror.com/babel-loader attempt 1 failed with EACCES
+56 silly fetch manifest css-loader@^6.5.1
+57 silly packumentCache full:https://registry.npmmirror.com/css-loader cache-miss
+58 http fetch GET https://registry.npmmirror.com/css-loader attempt 1 failed with EACCES
+59 silly fetch manifest css-minimizer-webpack-plugin@^3.2.0
+60 silly packumentCache full:https://registry.npmmirror.com/css-minimizer-webpack-plugin cache-miss
+61 http fetch GET https://registry.npmmirror.com/css-minimizer-webpack-plugin attempt 1 failed with EACCES
+62 silly fetch manifest eslint-webpack-plugin@^3.1.1
+63 silly packumentCache full:https://registry.npmmirror.com/eslint-webpack-plugin cache-miss
+64 http fetch GET https://registry.npmmirror.com/eslint-webpack-plugin attempt 1 failed with EACCES
+65 silly fetch manifest file-loader@^6.2.0
+66 silly packumentCache full:https://registry.npmmirror.com/file-loader cache-miss
+67 http fetch GET https://registry.npmmirror.com/file-loader attempt 1 failed with EACCES
+68 silly fetch manifest html-webpack-plugin@^5.5.0
+69 silly packumentCache full:https://registry.npmmirror.com/html-webpack-plugin cache-miss
+70 http fetch GET https://registry.npmmirror.com/html-webpack-plugin attempt 1 failed with EACCES
+71 silly fetch manifest mini-css-extract-plugin@^2.4.5
+72 silly packumentCache full:https://registry.npmmirror.com/mini-css-extract-plugin cache-miss
+73 http fetch GET https://registry.npmmirror.com/mini-css-extract-plugin attempt 1 failed with EACCES
+74 silly fetch manifest postcss-loader@^6.2.1
+75 silly packumentCache full:https://registry.npmmirror.com/postcss-loader cache-miss
+76 http fetch GET https://registry.npmmirror.com/postcss-loader attempt 1 failed with EACCES
+77 silly fetch manifest sass-loader@^12.3.0
+78 silly packumentCache full:https://registry.npmmirror.com/sass-loader cache-miss
+79 http fetch GET https://registry.npmmirror.com/sass-loader attempt 1 failed with EACCES
+80 silly fetch manifest source-map-loader@^3.0.0
+81 silly packumentCache full:https://registry.npmmirror.com/source-map-loader cache-miss
+82 http fetch GET https://registry.npmmirror.com/source-map-loader attempt 1 failed with EACCES
+83 silly fetch manifest style-loader@^3.3.1
+84 silly packumentCache full:https://registry.npmmirror.com/style-loader cache-miss
+85 http fetch GET https://registry.npmmirror.com/style-loader attempt 1 failed with EACCES
+86 silly fetch manifest terser-webpack-plugin@^5.2.5
+87 silly packumentCache full:https://registry.npmmirror.com/terser-webpack-plugin cache-miss
+88 http fetch GET https://registry.npmmirror.com/terser-webpack-plugin attempt 1 failed with EACCES
+89 silly fetch manifest webpack-dev-server@^4.6.0
+90 silly packumentCache full:https://registry.npmmirror.com/webpack-dev-server cache-miss
+91 http fetch GET https://registry.npmmirror.com/webpack-dev-server attempt 1 failed with EACCES
+92 silly fetch manifest webpack-manifest-plugin@^4.0.2
+93 silly packumentCache full:https://registry.npmmirror.com/webpack-manifest-plugin cache-miss
+94 http fetch GET https://registry.npmmirror.com/webpack-manifest-plugin attempt 1 failed with EACCES
+95 silly fetch manifest workbox-webpack-plugin@^6.4.1
+96 silly packumentCache full:https://registry.npmmirror.com/workbox-webpack-plugin cache-miss
+97 http fetch GET https://registry.npmmirror.com/workbox-webpack-plugin attempt 1 failed with EACCES
+98 silly placeDep node_modules/react-scripts @pmmmwh/react-refresh-webpack-plugin@ OK for: react-scripts@5.0.1 want: ^0.5.3
+99 silly placeDep node_modules/react-scripts babel-loader@ OK for: react-scripts@5.0.1 want: ^8.2.3
+100 silly placeDep node_modules/react-scripts css-loader@ OK for: react-scripts@5.0.1 want: ^6.5.1
+101 silly placeDep node_modules/react-scripts css-minimizer-webpack-plugin@ OK for: react-scripts@5.0.1 want: ^3.2.0
+102 silly placeDep node_modules/react-scripts eslint-webpack-plugin@ OK for: react-scripts@5.0.1 want: ^3.1.1
+103 silly placeDep node_modules/react-scripts file-loader@ OK for: react-scripts@5.0.1 want: ^6.2.0
+104 silly placeDep node_modules/react-scripts html-webpack-plugin@ OK for: react-scripts@5.0.1 want: ^5.5.0
+105 silly placeDep node_modules/react-scripts mini-css-extract-plugin@ OK for: react-scripts@5.0.1 want: ^2.4.5
+106 silly placeDep node_modules/react-scripts postcss-loader@ OK for: react-scripts@5.0.1 want: ^6.2.1
+107 silly placeDep node_modules/react-scripts sass-loader@ OK for: react-scripts@5.0.1 want: ^12.3.0
+108 silly placeDep node_modules/react-scripts source-map-loader@ OK for: react-scripts@5.0.1 want: ^3.0.0
+109 silly placeDep node_modules/react-scripts style-loader@ OK for: react-scripts@5.0.1 want: ^3.3.1
+110 silly placeDep node_modules/react-scripts terser-webpack-plugin@ OK for: react-scripts@5.0.1 want: ^5.2.5
+111 silly placeDep ROOT typescript@ REPLACE for: react-scripts@5.0.1 want: ^3.2.1 || ^4
+112 warn ERESOLVE overriding peer dependency {
+112 warn ERESOLVE   code: 'ERESOLVE',
+112 warn ERESOLVE   edge: {
+112 warn ERESOLVE     type: 'peerOptional',
+112 warn ERESOLVE     name: 'typescript',
+112 warn ERESOLVE     spec: '^3.2.1 || ^4',
+112 warn ERESOLVE     error: 'INVALID',
+112 warn ERESOLVE     from: {
+112 warn ERESOLVE       name: 'react-scripts',
+112 warn ERESOLVE       version: '5.0.1',
+112 warn ERESOLVE       location: 'node_modules/react-scripts',
+112 warn ERESOLVE       isWorkspace: false,
+112 warn ERESOLVE       dependents: [Array]
+112 warn ERESOLVE     }
+112 warn ERESOLVE   },
+112 warn ERESOLVE   dep: {
+112 warn ERESOLVE     name: 'typescript',
+112 warn ERESOLVE     version: undefined,
+112 warn ERESOLVE     errors: [ [FetchError] ],
+112 warn ERESOLVE     package: {},
+112 warn ERESOLVE     whileInstalling: {
+112 warn ERESOLVE       name: 'react-scripts',
+112 warn ERESOLVE       version: '5.0.1',
+112 warn ERESOLVE       path: 'D:\\Code\\React\\React体系课\\wenjuan\\node_modules\\react-scripts'
+112 warn ERESOLVE     },
+112 warn ERESOLVE     location: 'node_modules/typescript',
+112 warn ERESOLVE     isWorkspace: false,
+112 warn ERESOLVE     dependents: [ [Object] ]
+112 warn ERESOLVE   },
+112 warn ERESOLVE   force: false,
+112 warn ERESOLVE   isMine: true,
+112 warn ERESOLVE   strictPeerDeps: false,
+112 warn ERESOLVE   current: {
+112 warn ERESOLVE     name: 'typescript',
+112 warn ERESOLVE     version: '5.9.3',
+112 warn ERESOLVE     location: 'node_modules/typescript',
+112 warn ERESOLVE     isWorkspace: false,
+112 warn ERESOLVE     dependents: [ [Object], [Object], [Object], [Object] ]
+112 warn ERESOLVE   }
+112 warn ERESOLVE }
+113 warn ERESOLVE overriding peer dependency {
+113 warn ERESOLVE   code: 'ERESOLVE',
+113 warn ERESOLVE   edge: {
+113 warn ERESOLVE     type: 'peerOptional',
+113 warn ERESOLVE     name: 'typescript',
+113 warn ERESOLVE     spec: '^3.2.1 || ^4',
+113 warn ERESOLVE     error: 'INVALID',
+113 warn ERESOLVE     from: {
+113 warn ERESOLVE       name: 'react-scripts',
+113 warn ERESOLVE       version: '5.0.1',
+113 warn ERESOLVE       location: 'node_modules/react-scripts',
+113 warn ERESOLVE       isWorkspace: false,
+113 warn ERESOLVE       dependents: [Array]
+113 warn ERESOLVE     }
+113 warn ERESOLVE   },
+113 warn ERESOLVE   dep: {
+113 warn ERESOLVE     name: 'typescript',
+113 warn ERESOLVE     version: undefined,
+113 warn ERESOLVE     errors: [ [FetchError] ],
+113 warn ERESOLVE     package: {},
+113 warn ERESOLVE     whileInstalling: {
+113 warn ERESOLVE       name: 'react-scripts',
+113 warn ERESOLVE       version: '5.0.1',
+113 warn ERESOLVE       path: 'D:\\Code\\React\\React体系课\\wenjuan\\node_modules\\react-scripts'
+113 warn ERESOLVE     },
+113 warn ERESOLVE     location: 'node_modules/typescript',
+113 warn ERESOLVE     isWorkspace: false,
+113 warn ERESOLVE     dependents: [ [Object] ]
+113 warn ERESOLVE   },
+113 warn ERESOLVE   force: false,
+113 warn ERESOLVE   isMine: true,
+113 warn ERESOLVE   strictPeerDeps: false,
+113 warn ERESOLVE   current: {
+113 warn ERESOLVE     name: 'typescript',
+113 warn ERESOLVE     version: '5.9.3',
+113 warn ERESOLVE     location: 'node_modules/typescript',
+113 warn ERESOLVE     isWorkspace: false,
+113 warn ERESOLVE     dependents: [ [Object], [Object], [Object], [Object] ]
+113 warn ERESOLVE   }
+113 warn ERESOLVE }
+114 warn ERESOLVE overriding peer dependency {
+114 warn ERESOLVE   code: 'ERESOLVE',
+114 warn ERESOLVE   edge: {
+114 warn ERESOLVE     type: 'peerOptional',
+114 warn ERESOLVE     name: 'typescript',
+114 warn ERESOLVE     spec: '^3.2.1 || ^4',
+114 warn ERESOLVE     error: 'INVALID',
+114 warn ERESOLVE     from: {
+114 warn ERESOLVE       name: 'react-scripts',
+114 warn ERESOLVE       version: '5.0.1',
+114 warn ERESOLVE       location: 'node_modules/react-scripts',
+114 warn ERESOLVE       isWorkspace: false,
+114 warn ERESOLVE       dependents: [Array]
+114 warn ERESOLVE     }
+114 warn ERESOLVE   },
+114 warn ERESOLVE   dep: {
+114 warn ERESOLVE     name: 'typescript',
+114 warn ERESOLVE     version: undefined,
+114 warn ERESOLVE     errors: [ [FetchError] ],
+114 warn ERESOLVE     package: {},
+114 warn ERESOLVE     whileInstalling: {
+114 warn ERESOLVE       name: 'react-scripts',
+114 warn ERESOLVE       version: '5.0.1',
+114 warn ERESOLVE       path: 'D:\\Code\\React\\React体系课\\wenjuan\\node_modules\\react-scripts'
+114 warn ERESOLVE     },
+114 warn ERESOLVE     location: 'node_modules/typescript',
+114 warn ERESOLVE     isWorkspace: false,
+114 warn ERESOLVE     dependents: [ [Object] ]
+114 warn ERESOLVE   },
+114 warn ERESOLVE   force: false,
+114 warn ERESOLVE   isMine: true,
+114 warn ERESOLVE   strictPeerDeps: false,
+114 warn ERESOLVE   current: {
+114 warn ERESOLVE     name: 'typescript',
+114 warn ERESOLVE     version: undefined,
+114 warn ERESOLVE     errors: [ [FetchError] ],
+114 warn ERESOLVE     package: {},
+114 warn ERESOLVE     location: 'node_modules/typescript',
+114 warn ERESOLVE     isWorkspace: false,
+114 warn ERESOLVE     dependents: [ [Object] ]
+114 warn ERESOLVE   }
+114 warn ERESOLVE }
+115 silly placeDep node_modules/react-scripts webpack-dev-server@ OK for: react-scripts@5.0.1 want: ^4.6.0
+116 silly placeDep node_modules/react-scripts webpack-manifest-plugin@ OK for: react-scripts@5.0.1 want: ^4.0.2
+117 silly placeDep node_modules/react-scripts workbox-webpack-plugin@ OK for: react-scripts@5.0.1 want: ^6.4.1
+118 silly fetch manifest cosmiconfig-typescript-loader@^1.0.0
+119 silly packumentCache full:https://registry.npmmirror.com/cosmiconfig-typescript-loader cache-miss
+120 http fetch GET https://registry.npmmirror.com/cosmiconfig-typescript-loader attempt 1 failed with EACCES
+121 silly placeDep node_modules/@craco/craco cosmiconfig-typescript-loader@ OK for: @craco/craco@7.1.0 want: ^1.0.0
+122 silly fetch manifest jest-config@^27.5.1
+123 silly packumentCache full:https://registry.npmmirror.com/jest-config cache-miss
+124 http fetch GET https://registry.npmmirror.com/jest-config attempt 1 failed with EACCES
+125 silly placeDep node_modules/@jest/core jest-config@ OK for: @jest/core@27.5.1 want: ^27.5.1
+126 silly fetch manifest tsutils@^3.21.0
+127 silly packumentCache full:https://registry.npmmirror.com/tsutils cache-miss
+128 http fetch GET https://registry.npmmirror.com/tsutils attempt 1 failed with EACCES
+129 silly placeDep node_modules/@typescript-eslint/eslint-plugin tsutils@ OK for: @typescript-eslint/eslint-plugin@5.62.0 want: ^3.21.0
+130 silly fetch manifest tsutils@^3.21.0
+131 silly packumentCache full:https://registry.npmmirror.com/tsutils cache-miss
+132 http fetch GET https://registry.npmmirror.com/tsutils attempt 1 failed with EACCES
+133 silly placeDep node_modules/@typescript-eslint/type-utils tsutils@ OK for: @typescript-eslint/type-utils@5.62.0 want: ^3.21.0
+134 silly fetch manifest tsutils@^3.21.0
+135 silly packumentCache full:https://registry.npmmirror.com/tsutils cache-miss
+136 http fetch GET https://registry.npmmirror.com/tsutils attempt 1 failed with EACCES
+137 silly placeDep node_modules/@typescript-eslint/typescript-estree tsutils@ OK for: @typescript-eslint/typescript-estree@5.62.0 want: ^3.21.0
+138 silly fetch manifest jest-config@^27.5.1
+139 silly packumentCache full:https://registry.npmmirror.com/jest-config cache-miss
+140 http fetch GET https://registry.npmmirror.com/jest-config attempt 1 failed with EACCES
+141 silly placeDep node_modules/jest-cli jest-config@ OK for: jest-cli@27.5.1 want: ^27.5.1
+142 silly fetch manifest yaml@^2.4.2
+143 silly packumentCache full:https://registry.npmmirror.com/yaml cache-miss
+144 http fetch GET https://registry.npmmirror.com/yaml attempt 1 failed with EACCES
+145 silly placeDep node_modules/tailwindcss yaml@ OK for: postcss-load-config@6.0.1 want: ^2.4.2
+146 warn ERESOLVE overriding peer dependency {
+146 warn ERESOLVE   code: 'ERESOLVE',
+146 warn ERESOLVE   edge: {
+146 warn ERESOLVE     type: 'peerOptional',
+146 warn ERESOLVE     name: 'yaml',
+146 warn ERESOLVE     spec: '^2.4.2',
+146 warn ERESOLVE     error: 'INVALID',
+146 warn ERESOLVE     from: {
+146 warn ERESOLVE       name: 'postcss-load-config',
+146 warn ERESOLVE       version: '6.0.1',
+146 warn ERESOLVE       location: 'node_modules/tailwindcss/node_modules/postcss-load-config',
+146 warn ERESOLVE       isWorkspace: false,
+146 warn ERESOLVE       dependents: [Array]
+146 warn ERESOLVE     }
+146 warn ERESOLVE   },
+146 warn ERESOLVE   dep: {
+146 warn ERESOLVE     name: 'yaml',
+146 warn ERESOLVE     version: undefined,
+146 warn ERESOLVE     errors: [ [FetchError] ],
+146 warn ERESOLVE     package: {},
+146 warn ERESOLVE     whileInstalling: {
+146 warn ERESOLVE       name: 'postcss-load-config',
+146 warn ERESOLVE       version: '6.0.1',
+146 warn ERESOLVE       path: 'D:\\Code\\React\\React体系课\\wenjuan\\node_modules\\tailwindcss\\node_modules\\postcss-load-config'
+146 warn ERESOLVE     },
+146 warn ERESOLVE     location: 'node_modules/yaml',
+146 warn ERESOLVE     isWorkspace: false,
+146 warn ERESOLVE     dependents: [ [Object] ]
+146 warn ERESOLVE   },
+146 warn ERESOLVE   force: false,
+146 warn ERESOLVE   isMine: false,
+146 warn ERESOLVE   strictPeerDeps: false,
+146 warn ERESOLVE   current: {
+146 warn ERESOLVE     name: 'yaml',
+146 warn ERESOLVE     version: undefined,
+146 warn ERESOLVE     errors: [ [FetchError] ],
+146 warn ERESOLVE     package: {},
+146 warn ERESOLVE     location: 'node_modules/tailwindcss/node_modules/yaml',
+146 warn ERESOLVE     isWorkspace: false,
+146 warn ERESOLVE     dependents: []
+146 warn ERESOLVE   }
+146 warn ERESOLVE }
+147 verbose type system
+148 verbose stack FetchError: request to https://registry.npmmirror.com/@storybook%2faddon-a11y failed, reason: connect EACCES 2408:80f0:4100:4013:3::7f8:443
+148 verbose stack     at ClientRequest.<anonymous> (D:\Program_Files\nvm\v22.12.0\node_modules\npm\node_modules\minipass-fetch\lib\index.js:130:14)
+148 verbose stack     at ClientRequest.emit (node:events:524:28)
+148 verbose stack     at emitErrorEvent (node:_http_client:104:11)
+148 verbose stack     at _destroy (node:_http_client:892:9)
+148 verbose stack     at onSocketNT (node:_http_client:912:5)
+148 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+149 error code EACCES
+150 error syscall connect
+151 error errno EACCES
+152 error FetchError: request to https://registry.npmmirror.com/@storybook%2faddon-a11y failed, reason: connect EACCES 2408:80f0:4100:4013:3::7f8:443
+152 error     at ClientRequest.<anonymous> (D:\Program_Files\nvm\v22.12.0\node_modules\npm\node_modules\minipass-fetch\lib\index.js:130:14)
+152 error     at ClientRequest.emit (node:events:524:28)
+152 error     at emitErrorEvent (node:_http_client:104:11)
+152 error     at _destroy (node:_http_client:892:9)
+152 error     at onSocketNT (node:_http_client:912:5)
+152 error     at process.processTicksAndRejections (node:internal/process/task_queues:91:21) {
+152 error   code: 'EACCES',
+152 error   errno: 'EACCES',
+152 error   syscall: 'connect',
+152 error   address: '2408:80f0:4100:4013:3::7f8',
+152 error   port: 443,
+152 error   type: 'system',
+152 error   requiredBy: '.'
+152 error }
+153 error
+153 error The operation was rejected by your operating system.
+153 error It's possible that the file was already in use (by a text editor or antivirus),
+153 error or that you lack permissions to access it.
+153 error
+153 error If you believe this might be a permissions issue, please double-check the
+153 error permissions of the file and its containing directories, or try running
+153 error the command again as root/Administrator.
+154 silly unfinished npm timer reify 1774236569424
+155 silly unfinished npm timer reify:loadTrees 1774236569425
+156 verbose cwd D:\Code\React\React体系课\wenjuan
+157 verbose os Windows_NT 10.0.19045
+158 verbose node v22.12.0
+159 verbose npm  v10.9.0
+160 verbose exit 1
+161 verbose code 1
+162 error A complete log of this run can be found in: D:\Code\React\React体系课\wenjuan\.npm-cache\_logs\2026-03-23T03_29_27_117Z-debug-0.log

@@ -1,0 +1,391 @@
+'Log files:
+D:\Code\React\React体系课\wenjuan\.npm-cache\_logs\2026-03-23T03_32_24_092Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: react-scripts@5.0.1
+Found: typescript@5.9.3
+node_modules/typescript
+  dev typescript@"^5.9.3" from the root project
+  peer typescript@">=3" from cosmiconfig-typescript-loader@1.0.9
+  node_modules/cosmiconfig-typescript-loader
+    cosmiconfig-typescript-loader@"^1.0.0" from @craco/craco@7.1.0
+    node_modules/@craco/craco
+      dev @craco/craco@"^7.1.0" from the root project
+  peer typescript@">= 2.7" from fork-ts-checker-webpack-plugin@6.5.3
+  node_modules/fork-ts-checker-webpack-plugin
+    fork-ts-checker-webpack-plugin@"^6.5.0" from react-dev-utils@12.0.1
+    node_modules/react-dev-utils
+      react-dev-utils@"^12.0.1" from react-scripts@5.0.1
+      node_modules/react-scripts
+        react-scripts@"5.0.1" from the root project
+        peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+        node_modules/@craco/craco
+          dev @craco/craco@"^7.1.0" from the root project
+        peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+        node_modules/@storybook/preset-create-react-app
+          dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+  peer typescript@">=2.7" from ts-node@10.9.2
+  node_modules/ts-node
+    ts-node@"^10.7.0" from cosmiconfig-typescript-loader@1.0.9
+    node_modules/cosmiconfig-typescript-loader
+      cosmiconfig-typescript-loader@"^1.0.0" from @craco/craco@7.1.0
+      node_modules/@craco/craco
+        dev @craco/craco@"^7.1.0" from the root project
+    peerOptional ts-node@">=9.0.0" from jest-config@27.5.1
+    node_modules/jest-config
+      jest-config@"^27.5.1" from @jest/core@27.5.1
+      node_modules/@jest/core
+        @jest/core@"^27.5.1" from jest@27.5.1
+        node_modules/jest
+          peer jest@"^27.0.0 || ^28.0.0" from jest-watch-typeahead@1.1.0
+          node_modules/jest-watch-typeahead
+            jest-watch-typeahead@"^1.0.0" from react-scripts@5.0.1
+            node_modules/react-scripts
+              react-scripts@"5.0.1" from the root project
+              peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+              node_modules/@craco/craco
+                dev @craco/craco@"^7.1.0" from the root project
+              peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+              node_modules/@storybook/preset-create-react-app
+                dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+          jest@"^27.4.3" from react-scripts@5.0.1
+          node_modules/react-scripts
+            react-scripts@"5.0.1" from the root project
+            peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+            node_modules/@craco/craco
+              dev @craco/craco@"^7.1.0" from the root project
+            peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+            node_modules/@storybook/preset-create-react-app
+              dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+        @jest/core@"^27.5.1" from jest-cli@27.5.1
+        node_modules/jest-cli
+          jest-cli@"^27.5.1" from jest@27.5.1
+          node_modules/jest
+            peer jest@"^27.0.0 || ^28.0.0" from jest-watch-typeahead@1.1.0
+            node_modules/jest-watch-typeahead
+              jest-watch-typeahead@"^1.0.0" from react-scripts@5.0.1
+              node_modules/react-scripts
+                react-scripts@"5.0.1" from the root project
+                peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+                node_modules/@craco/craco
+                  dev @craco/craco@"^7.1.0" from the root project
+                peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+                node_modules/@storybook/preset-create-react-app
+                  dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+            jest@"^27.4.3" from react-scripts@5.0.1
+            node_modules/react-scripts
+              react-scripts@"5.0.1" from the root project
+              peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+              node_modules/@craco/craco
+                dev @craco/craco@"^7.1.0" from the root project
+              peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+              node_modules/@storybook/preset-create-react-app
+                dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+      jest-config@"^27.5.1" from jest-cli@27.5.1
+      node_modules/jest-cli
+        jest-cli@"^27.5.1" from jest@27.5.1
+        node_modules/jest
+          peer jest@"^27.0.0 || ^28.0.0" from jest-watch-typeahead@1.1.0
+          node_modules/jest-watch-typeahead
+            jest-watch-typeahead@"^1.0.0" from react-scripts@5.0.1
+            node_modules/react-scripts
+              react-scripts@"5.0.1" from the root project
+              peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+              node_modules/@craco/craco
+                dev @craco/craco@"^7.1.0" from the root project
+              peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+              node_modules/@storybook/preset-create-react-app
+                dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+          jest@"^27.4.3" from react-scripts@5.0.1
+          node_modules/react-scripts
+            react-scripts@"5.0.1" from the root project
+            peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+            node_modules/@craco/craco
+              dev @craco/craco@"^7.1.0" from the root project
+            peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+            node_modules/@storybook/preset-create-react-app
+              dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+  peer typescript@">=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta" from tsutils@3.21.0
+  node_modules/tsutils
+    tsutils@"^3.21.0" from @typescript-eslint/eslint-plugin@5.62.0
+    node_modules/@typescript-eslint/eslint-plugin
+      @typescript-eslint/eslint-plugin@"^5.5.0" from eslint-config-react-app@7.0.1
+      node_modules/eslint-config-react-app
+        eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+        node_modules/react-scripts
+          react-scripts@"5.0.1" from the root project
+          peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+          node_modules/@craco/craco
+            dev @craco/craco@"^7.1.0" from the root project
+          peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+          node_modules/@storybook/preset-create-react-app
+            dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+      peerOptional @typescript-eslint/eslint-plugin@"^4.0.0 || ^5.0.0" from eslint-plugin-jest@25.7.0
+      node_modules/eslint-plugin-jest
+        eslint-plugin-jest@"^25.3.0" from eslint-config-react-app@7.0.1
+        node_modules/eslint-config-react-app
+          eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+          node_modules/react-scripts
+            react-scripts@"5.0.1" from the root project
+            peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+            node_modules/@craco/craco
+              dev @craco/craco@"^7.1.0" from the root project
+            peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+            node_modules/@storybook/preset-create-react-app
+              dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+    tsutils@"^3.21.0" from @typescript-eslint/type-utils@5.62.0
+    node_modules/@typescript-eslint/type-utils
+      @typescript-eslint/type-utils@"5.62.0" from @typescript-eslint/eslint-plugin@5.62.0
+      node_modules/@typescript-eslint/eslint-plugin
+        @typescript-eslint/eslint-plugin@"^5.5.0" from eslint-config-react-app@7.0.1
+        node_modules/eslint-config-react-app
+          eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+          node_modules/react-scripts
+            react-scripts@"5.0.1" from the root project
+            peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+            node_modules/@craco/craco
+              dev @craco/craco@"^7.1.0" from the root project
+            peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+            node_modules/@storybook/preset-create-react-app
+              dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+        peerOptional @typescript-eslint/eslint-plugin@"^4.0.0 || ^5.0.0" from eslint-plugin-jest@25.7.0
+        node_modules/eslint-plugin-jest
+          eslint-plugin-jest@"^25.3.0" from eslint-config-react-app@7.0.1
+          node_modules/eslint-config-react-app
+            eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+            node_modules/react-scripts
+              react-scripts@"5.0.1" from the root project
+              peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+              node_modules/@craco/craco
+                dev @craco/craco@"^7.1.0" from the root project
+              peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+              node_modules/@storybook/preset-create-react-app
+                dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+    tsutils@"^3.21.0" from @typescript-eslint/typescript-estree@5.62.0
+    node_modules/@typescript-eslint/typescript-estree
+      @typescript-eslint/typescript-estree@"5.62.0" from @typescript-eslint/parser@5.62.0
+      node_modules/@typescript-eslint/parser
+        peer @typescript-eslint/parser@"^5.0.0" from @typescript-eslint/eslint-plugin@5.62.0
+        node_modules/@typescript-eslint/eslint-plugin
+          @typescript-eslint/eslint-plugin@"^5.5.0" from eslint-config-react-app@7.0.1
+          node_modules/eslint-config-react-app
+            eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+            node_modules/react-scripts
+              react-scripts@"5.0.1" from the root project
+              peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+              node_modules/@craco/craco
+                dev @craco/craco@"^7.1.0" from the root project
+              peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+              node_modules/@storybook/preset-create-react-app
+                dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+          peerOptional @typescript-eslint/eslint-plugin@"^4.0.0 || ^5.0.0" from eslint-plugin-jest@25.7.0
+          node_modules/eslint-plugin-jest
+            eslint-plugin-jest@"^25.3.0" from eslint-config-react-app@7.0.1
+            node_modules/eslint-config-react-app
+              eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+              node_modules/react-scripts
+                react-scripts@"5.0.1" from the root project
+                peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+                node_modules/@craco/craco
+                  dev @craco/craco@"^7.1.0" from the root project
+                peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+                node_modules/@storybook/preset-create-react-app
+                  dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+        @typescript-eslint/parser@"^5.5.0" from eslint-config-react-app@7.0.1
+        node_modules/eslint-config-react-app
+          eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+          node_modules/react-scripts
+            react-scripts@"5.0.1" from the root project
+            peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+            node_modules/@craco/craco
+              dev @craco/craco@"^7.1.0" from the root project
+            peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+            node_modules/@storybook/preset-create-react-app
+              dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+      @typescript-eslint/typescript-estree@"5.62.0" from @typescript-eslint/type-utils@5.62.0
+      node_modules/@typescript-eslint/type-utils
+        @typescript-eslint/type-utils@"5.62.0" from @typescript-eslint/eslint-plugin@5.62.0
+        node_modules/@typescript-eslint/eslint-plugin
+          @typescript-eslint/eslint-plugin@"^5.5.0" from eslint-config-react-app@7.0.1
+          node_modules/eslint-config-react-app
+            eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+            node_modules/react-scripts
+              react-scripts@"5.0.1" from the root project
+              peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+              node_modules/@craco/craco
+                dev @craco/craco@"^7.1.0" from the root project
+              peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+              node_modules/@storybook/preset-create-react-app
+                dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+          peerOptional @typescript-eslint/eslint-plugin@"^4.0.0 || ^5.0.0" from eslint-plugin-jest@25.7.0
+          node_modules/eslint-plugin-jest
+            eslint-plugin-jest@"^25.3.0" from eslint-config-react-app@7.0.1
+            node_modules/eslint-config-react-app
+              eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+              node_modules/react-scripts
+                react-scripts@"5.0.1" from the root project
+                peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+                node_modules/@craco/craco
+                  dev @craco/craco@"^7.1.0" from the root project
+                peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+                node_modules/@storybook/preset-create-react-app
+                  dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+      @typescript-eslint/typescript-estree@"5.62.0" from @typescript-eslint/utils@5.62.0
+      node_modules/@typescript-eslint/utils
+        @typescript-eslint/utils@"5.62.0" from @typescript-eslint/eslint-plugin@5.62.0
+        node_modules/@typescript-eslint/eslint-plugin
+          @typescript-eslint/eslint-plugin@"^5.5.0" from eslint-config-react-app@7.0.1
+          node_modules/eslint-config-react-app
+            eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+            node_modules/react-scripts
+              react-scripts@"5.0.1" from the root project
+              peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+              node_modules/@craco/craco
+                dev @craco/craco@"^7.1.0" from the root project
+              peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+              node_modules/@storybook/preset-create-react-app
+                dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+          peerOptional @typescript-eslint/eslint-plugin@"^4.0.0 || ^5.0.0" from eslint-plugin-jest@25.7.0
+          node_modules/eslint-plugin-jest
+            eslint-plugin-jest@"^25.3.0" from eslint-config-react-app@7.0.1
+            node_modules/eslint-config-react-app
+              eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+              node_modules/react-scripts
+                react-scripts@"5.0.1" from the root project
+                peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+                node_modules/@craco/craco
+                  dev @craco/craco@"^7.1.0" from the root project
+                peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+                node_modules/@storybook/preset-create-react-app
+                  dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+        @typescript-eslint/utils@"5.62.0" from @typescript-eslint/experimental-utils@5.62.0
+        node_modules/@typescript-eslint/experimental-utils
+          @typescript-eslint/experimental-utils@"^5.0.0" from eslint-plugin-jest@25.7.0
+          node_modules/eslint-plugin-jest
+            eslint-plugin-jest@"^25.3.0" from eslint-config-react-app@7.0.1
+            node_modules/eslint-config-react-app
+              eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+              node_modules/react-scripts
+                react-scripts@"5.0.1" from the root project
+                peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+                node_modules/@craco/craco
+                  dev @craco/craco@"^7.1.0" from the root project
+                peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+                node_modules/@storybook/preset-create-react-app
+                  dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+        @typescript-eslint/utils@"5.62.0" from @typescript-eslint/type-utils@5.62.0
+        node_modules/@typescript-eslint/type-utils
+          @typescript-eslint/type-utils@"5.62.0" from @typescript-eslint/eslint-plugin@5.62.0
+          node_modules/@typescript-eslint/eslint-plugin
+            @typescript-eslint/eslint-plugin@"^5.5.0" from eslint-config-react-app@7.0.1
+            node_modules/eslint-config-react-app
+              eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+              node_modules/react-scripts
+                react-scripts@"5.0.1" from the root project
+                peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+                node_modules/@craco/craco
+                  dev @craco/craco@"^7.1.0" from the root project
+                peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+                node_modules/@storybook/preset-create-react-app
+                  dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+            peerOptional @typescript-eslint/eslint-plugin@"^4.0.0 || ^5.0.0" from eslint-plugin-jest@25.7.0
+            node_modules/eslint-plugin-jest
+              eslint-plugin-jest@"^25.3.0" from eslint-config-react-app@7.0.1
+              node_modules/eslint-config-react-app
+                eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+                node_modules/react-scripts
+                  react-scripts@"5.0.1" from the root project
+                  peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+                  node_modules/@craco/craco
+                    dev @craco/craco@"^7.1.0" from the root project
+                  peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+                  node_modules/@storybook/preset-create-react-app
+                    dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+        @typescript-eslint/utils@"^5.58.0" from eslint-plugin-testing-library@5.11.1
+        node_modules/eslint-plugin-testing-library
+          eslint-plugin-testing-library@"^5.0.1" from eslint-config-react-app@7.0.1
+          node_modules/eslint-config-react-app
+            eslint-config-react-app@"^7.0.1" from react-scripts@5.0.1
+            node_modules/react-scripts
+              react-scripts@"5.0.1" from the root project
+              peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+              node_modules/@craco/craco
+                dev @craco/craco@"^7.1.0" from the root project
+              peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+              node_modules/@storybook/preset-create-react-app
+                dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+  peerOptional typescript@">= 4.9.x" from @storybook/react-webpack5@10.3.1
+  node_modules/@storybook/react-webpack5
+    dev @storybook/react-webpack5@"^10.3.1" from the root project
+  peer typescript@">= 4.x" from @storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0
+  node_modules/@storybook/react-docgen-typescript-plugin
+    @storybook/react-docgen-typescript-plugin@"1.0.6--canary.9.0c3f3b7.0" from @storybook/preset-create-react-app@10.3.1
+    node_modules/@storybook/preset-create-react-app
+      dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+    @storybook/react-docgen-typescript-plugin@"1.0.6--canary.9.0c3f3b7.0" from @storybook/preset-react-webpack@10.3.1
+    node_modules/@storybook/preset-react-webpack
+      @storybook/preset-react-webpack@"10.3.1" from @storybook/react-webpack5@10.3.1
+      node_modules/@storybook/react-webpack5
+        dev @storybook/react-webpack5@"^10.3.1" from the root project
+  peer typescript@">= 4.3.x" from react-docgen-typescript@2.4.0
+  node_modules/react-docgen-typescript
+    react-docgen-typescript@"^2.2.2" from @storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0
+    node_modules/@storybook/react-docgen-typescript-plugin
+      @storybook/react-docgen-typescript-plugin@"1.0.6--canary.9.0c3f3b7.0" from @storybook/preset-create-react-app@10.3.1
+      node_modules/@storybook/preset-create-react-app
+        dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+      @storybook/react-docgen-typescript-plugin@"1.0.6--canary.9.0c3f3b7.0" from @storybook/preset-react-webpack@10.3.1
+      node_modules/@storybook/preset-react-webpack
+        @storybook/preset-react-webpack@"10.3.1" from @storybook/react-webpack5@10.3.1
+        node_modules/@storybook/react-webpack5
+          dev @storybook/react-webpack5@"^10.3.1" from the root project
+    react-docgen-typescript@"^2.2.2" from @storybook/react@10.3.1
+    node_modules/@storybook/react
+      @storybook/react@"10.3.1" from @storybook/react-webpack5@10.3.1
+      node_modules/@storybook/react-webpack5
+        dev @storybook/react-webpack5@"^10.3.1" from the root project
+  peerOptional typescript@">= 4.9.x" from @storybook/react@10.3.1
+  node_modules/@storybook/react
+    @storybook/react@"10.3.1" from @storybook/react-webpack5@10.3.1
+    node_modules/@storybook/react-webpack5
+      dev @storybook/react-webpack5@"^10.3.1" from the root project
+  peer typescript@">3.6.0" from fork-ts-checker-webpack-plugin@9.1.0
+  node_modules/@storybook/builder-webpack5/node_modules/fork-ts-checker-webpack-plugin
+    fork-ts-checker-webpack-plugin@"^9.1.0" from @storybook/builder-webpack5@10.3.1
+    node_modules/@storybook/builder-webpack5
+      @storybook/builder-webpack5@"10.3.1" from @storybook/react-webpack5@10.3.1
+      node_modules/@storybook/react-webpack5
+        dev @storybook/react-webpack5@"^10.3.1" from the root project
+  peer typescript@">=4.8.4 <6.0.0" from @typescript-eslint/utils@8.57.1
+  node_modules/eslint-plugin-storybook/node_modules/@typescript-eslint/utils
+    @typescript-eslint/utils@"^8.48.0" from eslint-plugin-storybook@10.3.1
+    node_modules/eslint-plugin-storybook
+      dev eslint-plugin-storybook@"^10.3.1" from the root project
+
+Could not resolve dependency:
+peerOptional typescript@"^3.2.1 || ^4" from react-scripts@5.0.1
+node_modules/react-scripts
+  react-scripts@"5.0.1" from the root project
+  peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+  node_modules/@craco/craco
+    dev @craco/craco@"^7.1.0" from the root project
+  peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+  node_modules/@storybook/preset-create-react-app
+    dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+
+Conflicting peer dependency: typescript@4.9.5
+node_modules/typescript
+  peerOptional typescript@"^3.2.1 || ^4" from react-scripts@5.0.1
+  node_modules/react-scripts
+    react-scripts@"5.0.1" from the root project
+    peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+    node_modules/@craco/craco
+      dev @craco/craco@"^7.1.0" from the root project
+    peer react-scripts@">=5.0.0" from @storybook/preset-create-react-app@10.3.1
+    node_modules/@storybook/preset-create-react-app
+      dev @storybook/preset-create-react-app@"^10.3.1" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.

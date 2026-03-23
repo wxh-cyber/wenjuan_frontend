@@ -1,0 +1,487 @@
+0 verbose cli D:\Program_Files\nodejs\node.exe D:\Program_Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.12.0
+3 silly config load:file:D:\Program_Files\nvm\v22.12.0\node_modules\npm\npmrc
+4 silly config load:file:D:\Code\React\React体系课\wenjuan\.npmrc
+5 silly config load:file:C:\Users\Administrator\.npmrc
+6 silly config load:file:D:\Program_Files\node-v24.12.0-win-x64\node-v24.12.0-win-x64\node_global\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--include" "dev"
+9 verbose logfile logs-max:10 dir:D:\Code\React\React体系课\wenjuan\.npm-cache\_logs\2026-03-23T03_32_24_092Z-
+10 verbose logfile D:\Code\React\React体系课\wenjuan\.npm-cache\_logs\2026-03-23T03_32_24_092Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest storybook@^10.3.1
+15 silly packumentCache full:https://registry.npmmirror.com/storybook cache-miss
+16 http fetch GET 200 https://registry.npmmirror.com/storybook 2100ms (cache miss)
+17 silly packumentCache full:https://registry.npmmirror.com/storybook set size:2790612 disposed:false
+18 silly fetch manifest prettier@^2 || ^3
+19 silly packumentCache full:https://registry.npmmirror.com/prettier cache-miss
+20 http fetch GET 200 https://registry.npmmirror.com/prettier 144ms (cache miss)
+21 silly packumentCache full:https://registry.npmmirror.com/prettier set size:97412 disposed:false
+22 silly fetch manifest @storybook/react-webpack5@^10.3.1
+23 silly packumentCache full:https://registry.npmmirror.com/@storybook%2freact-webpack5 cache-miss
+24 http fetch GET 200 https://registry.npmmirror.com/@storybook%2freact-webpack5 491ms (cache miss)
+25 silly packumentCache full:https://registry.npmmirror.com/@storybook%2freact-webpack5 set size:938373 disposed:false
+26 silly fetch manifest react@^19.2.4
+27 silly packumentCache full:https://registry.npmmirror.com/react cache-miss
+28 http fetch GET 200 https://registry.npmmirror.com/react 740ms (cache miss)
+29 silly packumentCache full:https://registry.npmmirror.com/react set size:1195809 disposed:false
+30 silly fetch manifest react-dom@^19.2.4
+31 silly packumentCache full:https://registry.npmmirror.com/react-dom cache-miss
+32 http fetch GET 200 https://registry.npmmirror.com/react-dom 553ms (cache miss)
+33 silly packumentCache full:https://registry.npmmirror.com/react-dom set size:1360109 disposed:false
+34 silly fetch manifest typescript@^5.9.3
+35 silly packumentCache full:https://registry.npmmirror.com/typescript cache-miss
+36 http fetch GET 200 https://registry.npmmirror.com/typescript 594ms (cache miss)
+37 silly packumentCache full:https://registry.npmmirror.com/typescript set size:1683275 disposed:false
+38 silly fetch manifest @storybook/preset-create-react-app@^10.3.1
+39 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fpreset-create-react-app cache-miss
+40 http fetch GET 200 https://registry.npmmirror.com/@storybook%2fpreset-create-react-app 512ms (cache miss)
+41 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fpreset-create-react-app set size:833346 disposed:false
+42 silly fetch manifest react-scripts@5.0.1
+43 silly packumentCache full:https://registry.npmmirror.com/react-scripts cache-miss
+44 http fetch GET 200 https://registry.npmmirror.com/react-scripts 142ms (cache miss)
+45 silly packumentCache full:https://registry.npmmirror.com/react-scripts set size:101855 disposed:false
+46 silly fetch manifest typescript@^3.2.1 || ^4
+47 silly packumentCache full:https://registry.npmmirror.com/typescript cache-miss
+48 http fetch GET 200 https://registry.npmmirror.com/typescript 170ms (cache hit)
+49 silly packumentCache full:https://registry.npmmirror.com/typescript set size:14632989 disposed:false
+50 silly fetch manifest @storybook/addon-a11y@^10.3.1
+51 silly packumentCache full:https://registry.npmmirror.com/@storybook%2faddon-a11y cache-miss
+52 silly fetch manifest @storybook/addon-docs@^10.3.1
+53 silly packumentCache full:https://registry.npmmirror.com/@storybook%2faddon-docs cache-miss
+54 http fetch GET 200 https://registry.npmmirror.com/@storybook%2faddon-docs 1706ms (cache miss)
+55 silly packumentCache full:https://registry.npmmirror.com/@storybook%2faddon-docs set size:2005716 disposed:false
+56 silly fetch manifest webpack@^5.105.4
+57 silly packumentCache full:https://registry.npmmirror.com/webpack cache-miss
+58 http fetch GET 200 https://registry.npmmirror.com/webpack 219ms (cache miss)
+59 silly packumentCache full:https://registry.npmmirror.com/webpack set size:473581 disposed:false
+60 silly fetch manifest eslint-plugin-storybook@^10.3.1
+61 silly packumentCache full:https://registry.npmmirror.com/eslint-plugin-storybook cache-miss
+62 http fetch GET 200 https://registry.npmmirror.com/eslint-plugin-storybook 260ms (cache miss)
+63 silly packumentCache full:https://registry.npmmirror.com/eslint-plugin-storybook set size:405704 disposed:false
+64 silly fetch manifest eslint@>=8
+65 silly packumentCache full:https://registry.npmmirror.com/eslint cache-miss
+66 http fetch GET 200 https://registry.npmmirror.com/eslint 227ms (cache miss)
+67 silly packumentCache full:https://registry.npmmirror.com/eslint set size:221514 disposed:false
+68 silly fetch manifest jiti@*
+69 silly packumentCache full:https://registry.npmmirror.com/jiti cache-miss
+70 http fetch GET 200 https://registry.npmmirror.com/jiti 228ms (cache miss)
+71 silly packumentCache full:https://registry.npmmirror.com/jiti set size:60368 disposed:false
+72 silly placeDep ROOT @storybook/addon-a11y@ OK for: wenjuan@0.1.0 want: ^10.3.1
+73 silly placeDep ROOT @storybook/addon-docs@10.3.1 OK for: wenjuan@0.1.0 want: ^10.3.1
+74 silly placeDep ROOT storybook@10.3.1 OK for: @storybook/addon-docs@10.3.1 want: ^10.3.1
+75 silly placeDep ROOT @storybook/preset-create-react-app@10.3.1 OK for: wenjuan@0.1.0 want: ^10.3.1
+76 silly placeDep ROOT @storybook/react-webpack5@10.3.1 OK for: wenjuan@0.1.0 want: ^10.3.1
+77 silly placeDep ROOT eslint-plugin-storybook@10.3.1 OK for: wenjuan@0.1.0 want: ^10.3.1
+78 silly placeDep ROOT webpack@5.105.4 REPLACE for: wenjuan@0.1.0 want: ^5.105.4
+79 silly fetch manifest @mdx-js/react@^3.0.0
+80 silly packumentCache full:https://registry.npmmirror.com/@mdx-js%2freact cache-miss
+81 silly fetch manifest @storybook/csf-plugin@10.3.1
+82 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fcsf-plugin cache-miss
+83 silly fetch manifest @storybook/icons@^2.0.1
+84 silly packumentCache full:https://registry.npmmirror.com/@storybook%2ficons cache-miss
+85 silly fetch manifest @storybook/react-dom-shim@10.3.1
+86 silly packumentCache full:https://registry.npmmirror.com/@storybook%2freact-dom-shim cache-miss
+87 silly fetch manifest ts-dedent@^2.0.0
+88 silly packumentCache full:https://registry.npmmirror.com/ts-dedent cache-miss
+89 silly fetch manifest @storybook/global@^5.0.0
+90 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fglobal cache-miss
+91 silly fetch manifest @storybook/icons@^2.0.1
+92 silly packumentCache full:https://registry.npmmirror.com/@storybook%2ficons cache-miss
+93 http fetch GET 200 https://registry.npmmirror.com/@mdx-js%2freact 195ms (cache miss)
+94 silly packumentCache full:https://registry.npmmirror.com/@mdx-js%2freact set size:46036 disposed:false
+95 silly fetch manifest @testing-library/user-event@^14.6.1
+96 silly packumentCache full:https://registry.npmmirror.com/@testing-library%2fuser-event cache-miss
+97 http fetch GET 200 https://registry.npmmirror.com/@testing-library%2fuser-event 160ms (cache miss)
+98 silly packumentCache full:https://registry.npmmirror.com/@testing-library%2fuser-event set size:96441 disposed:false
+99 silly fetch manifest @vitest/expect@3.2.4
+100 silly packumentCache full:https://registry.npmmirror.com/@vitest%2fexpect cache-miss
+101 http fetch GET 200 https://registry.npmmirror.com/ts-dedent 404ms (cache miss)
+102 silly packumentCache full:https://registry.npmmirror.com/ts-dedent set size:4485 disposed:false
+103 silly fetch manifest @vitest/spy@3.2.4
+104 silly packumentCache full:https://registry.npmmirror.com/@vitest%2fspy cache-miss
+105 http fetch GET 200 https://registry.npmmirror.com/@storybook%2fglobal 445ms (cache miss)
+106 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fglobal set size:2707 disposed:false
+107 silly fetch manifest esbuild@^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0
+108 silly packumentCache full:https://registry.npmmirror.com/esbuild cache-miss
+109 http fetch GET 200 https://registry.npmmirror.com/@storybook%2ficons 565ms (cache miss)
+110 silly packumentCache full:https://registry.npmmirror.com/@storybook%2ficons set size:53469 disposed:false
+111 silly fetch manifest open@^10.2.0
+112 silly packumentCache full:https://registry.npmmirror.com/open cache-miss
+113 http fetch GET 200 https://registry.npmmirror.com/@storybook%2ficons 580ms (cache miss)
+114 silly packumentCache full:https://registry.npmmirror.com/@storybook%2ficons set size:53469 disposed:false
+115 silly packumentCache full:https://registry.npmmirror.com/@storybook%2ficons dispose
+116 silly fetch manifest recast@^0.23.5
+117 silly packumentCache full:https://registry.npmmirror.com/recast cache-miss
+118 http fetch GET 200 https://registry.npmmirror.com/@vitest%2fexpect 218ms (cache miss)
+119 silly packumentCache full:https://registry.npmmirror.com/@vitest%2fexpect set size:85387 disposed:false
+120 silly fetch manifest ws@^8.18.0
+121 silly packumentCache full:https://registry.npmmirror.com/ws cache-miss
+122 http fetch GET 200 https://registry.npmmirror.com/@vitest%2fspy 382ms (cache miss)
+123 silly packumentCache full:https://registry.npmmirror.com/@vitest%2fspy set size:79927 disposed:false
+124 silly fetch manifest @storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0
+125 silly packumentCache full:https://registry.npmmirror.com/@storybook%2freact-docgen-typescript-plugin cache-miss
+126 http fetch GET 200 https://registry.npmmirror.com/open 295ms (cache miss)
+127 silly packumentCache full:https://registry.npmmirror.com/open set size:23038 disposed:false
+128 silly fetch manifest pnp-webpack-plugin@^1.7.0
+129 silly packumentCache full:https://registry.npmmirror.com/pnp-webpack-plugin cache-miss
+130 http fetch GET 200 https://registry.npmmirror.com/ws 273ms (cache miss)
+131 silly packumentCache full:https://registry.npmmirror.com/ws set size:92971 disposed:false
+132 silly fetch manifest @storybook/builder-webpack5@10.3.1
+133 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fbuilder-webpack5 cache-miss
+134 http fetch GET 200 https://registry.npmmirror.com/recast 418ms (cache miss)
+135 silly packumentCache full:https://registry.npmmirror.com/recast set size:80008 disposed:false
+136 silly fetch manifest @storybook/preset-react-webpack@10.3.1
+137 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fpreset-react-webpack cache-miss
+138 http fetch GET 200 https://registry.npmmirror.com/@storybook%2freact-docgen-typescript-plugin 254ms (cache miss)
+139 silly packumentCache full:https://registry.npmmirror.com/@storybook%2freact-docgen-typescript-plugin set size:19414 disposed:false
+140 silly fetch manifest @storybook/react@10.3.1
+141 silly packumentCache full:https://registry.npmmirror.com/@storybook%2freact cache-miss
+142 http fetch GET 200 https://registry.npmmirror.com/pnp-webpack-plugin 212ms (cache miss)
+143 silly packumentCache full:https://registry.npmmirror.com/pnp-webpack-plugin set size:6330 disposed:false
+144 silly fetch manifest @typescript-eslint/utils@^8.48.0
+145 silly packumentCache full:https://registry.npmmirror.com/@typescript-eslint%2futils cache-miss
+146 http fetch GET 200 https://registry.npmmirror.com/@storybook%2fcsf-plugin 1214ms (cache miss)
+147 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fcsf-plugin set size:846681 disposed:false
+148 silly fetch manifest enhanced-resolve@^5.20.0
+149 silly packumentCache full:https://registry.npmmirror.com/enhanced-resolve cache-miss
+150 http fetch GET 200 https://registry.npmmirror.com/esbuild 1147ms (cache miss)
+151 silly packumentCache full:https://registry.npmmirror.com/esbuild set size:209823 disposed:false
+152 silly fetch manifest terser-webpack-plugin@^5.3.17
+153 silly packumentCache full:https://registry.npmmirror.com/terser-webpack-plugin cache-miss
+154 http fetch GET 200 https://registry.npmmirror.com/enhanced-resolve 234ms (cache miss)
+155 silly packumentCache full:https://registry.npmmirror.com/enhanced-resolve set size:50968 disposed:false
+156 http fetch GET 200 https://registry.npmmirror.com/@storybook%2freact-dom-shim 1794ms (cache miss)
+157 silly packumentCache full:https://registry.npmmirror.com/@storybook%2freact-dom-shim set size:770143 disposed:false
+158 http fetch GET 200 https://registry.npmmirror.com/terser-webpack-plugin 378ms (cache miss)
+159 silly packumentCache full:https://registry.npmmirror.com/terser-webpack-plugin set size:52003 disposed:false
+160 http fetch GET 200 https://registry.npmmirror.com/@storybook%2fpreset-react-webpack 1431ms (cache miss)
+161 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fpreset-react-webpack set size:1012846 disposed:false
+162 http fetch GET 200 https://registry.npmmirror.com/@storybook%2freact 1974ms (cache miss)
+163 silly packumentCache full:https://registry.npmmirror.com/@storybook%2freact set size:2040649 disposed:false
+164 http fetch GET 200 https://registry.npmmirror.com/@typescript-eslint%2futils 2498ms (cache miss)
+165 silly packumentCache full:https://registry.npmmirror.com/@typescript-eslint%2futils set size:1793735 disposed:false
+166 http fetch GET 200 https://registry.npmmirror.com/@storybook%2fbuilder-webpack5 36770ms (cache miss)
+167 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fbuilder-webpack5 set size:1437347 disposed:false
+168 silly fetch manifest @types/react@>=16
+169 silly packumentCache full:https://registry.npmmirror.com/@types%2freact cache-miss
+170 http fetch GET 200 https://registry.npmmirror.com/@types%2freact 138ms (cache miss)
+171 silly packumentCache full:https://registry.npmmirror.com/@types%2freact set size:331315 disposed:false
+172 silly fetch manifest react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+173 silly packumentCache full:https://registry.npmmirror.com/react cache-miss
+174 http fetch GET 200 https://registry.npmmirror.com/react 64ms (cache hit)
+175 silly packumentCache full:https://registry.npmmirror.com/react set size:6285629 disposed:false
+176 silly fetch manifest esbuild@*
+177 silly packumentCache full:https://registry.npmmirror.com/esbuild cache-hit
+178 silly fetch manifest rollup@*
+179 silly packumentCache full:https://registry.npmmirror.com/rollup cache-miss
+180 http fetch GET 200 https://registry.npmmirror.com/rollup 281ms (cache miss)
+181 silly packumentCache full:https://registry.npmmirror.com/rollup set size:676988 disposed:false
+182 silly fetch manifest vite@*
+183 silly packumentCache full:https://registry.npmmirror.com/vite cache-miss
+184 http fetch GET 200 https://registry.npmmirror.com/vite 1844ms (cache miss)
+185 silly packumentCache full:https://registry.npmmirror.com/vite set size:6224333 disposed:false
+186 silly fetch manifest @types/node@^20.19.0 || >=22.12.0
+187 silly packumentCache full:https://registry.npmmirror.com/@types%2fnode cache-miss
+188 http fetch GET 200 https://registry.npmmirror.com/@types%2fnode 397ms (cache miss)
+189 silly packumentCache full:https://registry.npmmirror.com/@types%2fnode set size:1147467 disposed:false
+190 silly fetch manifest @vitejs/devtools@^0.1.0
+191 silly packumentCache full:https://registry.npmmirror.com/@vitejs%2fdevtools cache-miss
+192 http fetch GET 200 https://registry.npmmirror.com/@vitejs%2fdevtools 107ms (cache miss)
+193 silly packumentCache full:https://registry.npmmirror.com/@vitejs%2fdevtools set size:21133 disposed:false
+194 silly fetch manifest jiti@>=1.21.0
+195 silly packumentCache full:https://registry.npmmirror.com/jiti cache-hit
+196 silly fetch manifest less@^4.0.0
+197 silly packumentCache full:https://registry.npmmirror.com/less cache-miss
+198 http fetch GET 200 https://registry.npmmirror.com/less 70ms (cache miss)
+199 silly packumentCache full:https://registry.npmmirror.com/less set size:52137 disposed:false
+200 silly fetch manifest sass@^1.70.0
+201 silly packumentCache full:https://registry.npmmirror.com/sass cache-miss
+202 http fetch GET 200 https://registry.npmmirror.com/sass 99ms (cache miss)
+203 silly packumentCache full:https://registry.npmmirror.com/sass set size:125288 disposed:false
+204 silly fetch manifest sass-embedded@^1.70.0
+205 silly packumentCache full:https://registry.npmmirror.com/sass-embedded cache-miss
+206 http fetch GET 200 https://registry.npmmirror.com/sass-embedded 101ms (cache miss)
+207 silly packumentCache full:https://registry.npmmirror.com/sass-embedded set size:74618 disposed:false
+208 silly fetch manifest stylus@>=0.54.8
+209 silly packumentCache full:https://registry.npmmirror.com/stylus cache-miss
+210 http fetch GET 200 https://registry.npmmirror.com/stylus 127ms (cache miss)
+211 silly packumentCache full:https://registry.npmmirror.com/stylus set size:65242 disposed:false
+212 silly fetch manifest sugarss@^5.0.0
+213 silly packumentCache full:https://registry.npmmirror.com/sugarss cache-miss
+214 http fetch GET 200 https://registry.npmmirror.com/sugarss 100ms (cache miss)
+215 silly packumentCache full:https://registry.npmmirror.com/sugarss set size:8151 disposed:false
+216 silly fetch manifest postcss@^8.3.3
+217 silly packumentCache full:https://registry.npmmirror.com/postcss cache-miss
+218 http fetch GET 200 https://registry.npmmirror.com/postcss 89ms (cache miss)
+219 silly packumentCache full:https://registry.npmmirror.com/postcss set size:95216 disposed:false
+220 silly fetch manifest terser@^5.16.0
+221 silly packumentCache full:https://registry.npmmirror.com/terser cache-miss
+222 http fetch GET 200 https://registry.npmmirror.com/terser 98ms (cache miss)
+223 silly packumentCache full:https://registry.npmmirror.com/terser set size:110114 disposed:false
+224 silly fetch manifest tsx@^4.8.1
+225 silly packumentCache full:https://registry.npmmirror.com/tsx cache-miss
+226 http fetch GET 200 https://registry.npmmirror.com/tsx 87ms (cache miss)
+227 silly packumentCache full:https://registry.npmmirror.com/tsx set size:67335 disposed:false
+228 silly fetch manifest yaml@^2.4.2
+229 silly packumentCache full:https://registry.npmmirror.com/yaml cache-miss
+230 http fetch GET 200 https://registry.npmmirror.com/yaml 124ms (cache miss)
+231 silly packumentCache full:https://registry.npmmirror.com/yaml set size:56159 disposed:false
+232 silly fetch manifest webpack@*
+233 silly packumentCache full:https://registry.npmmirror.com/webpack cache-hit
+234 silly fetch manifest react-dom@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+235 silly packumentCache full:https://registry.npmmirror.com/react-dom cache-miss
+236 http fetch GET 200 https://registry.npmmirror.com/react-dom 36ms (cache hit)
+237 silly packumentCache full:https://registry.npmmirror.com/react-dom set size:8410902 disposed:false
+238 silly placeDep ROOT @mdx-js/react@3.1.1 OK for: @storybook/addon-docs@10.3.1 want: ^3.0.0
+239 silly placeDep node_modules/@storybook/addon-docs @storybook/csf-plugin@10.3.1 OK for: @storybook/addon-docs@10.3.1 want: 10.3.1
+240 silly placeDep ROOT @storybook/icons@2.0.1 OK for: @storybook/addon-docs@10.3.1 want: ^2.0.1
+241 silly placeDep ROOT @storybook/react-dom-shim@10.3.1 OK for: @storybook/addon-docs@10.3.1 want: 10.3.1
+242 silly placeDep ROOT ts-dedent@2.2.0 OK for: @storybook/addon-docs@10.3.1 want: ^2.0.0
+243 silly fetch manifest @types/mdx@^2.0.0
+244 silly packumentCache full:https://registry.npmmirror.com/@types%2fmdx cache-miss
+245 silly fetch manifest unplugin@^2.3.5
+246 silly packumentCache full:https://registry.npmmirror.com/unplugin cache-miss
+247 http fetch GET 200 https://registry.npmmirror.com/@types%2fmdx 432ms (cache miss)
+248 silly packumentCache full:https://registry.npmmirror.com/@types%2fmdx set size:8494 disposed:false
+249 http fetch GET 200 https://registry.npmmirror.com/unplugin 435ms (cache miss)
+250 silly packumentCache full:https://registry.npmmirror.com/unplugin set size:72687 disposed:false
+251 silly placeDep ROOT @types/mdx@2.0.13 OK for: @mdx-js/react@3.1.1 want: ^2.0.0
+252 silly fetch manifest typescript@>= 4.x
+253 silly packumentCache full:https://registry.npmmirror.com/typescript cache-miss
+254 http fetch GET 200 https://registry.npmmirror.com/typescript 66ms (cache hit)
+255 silly packumentCache full:https://registry.npmmirror.com/typescript set size:14632989 disposed:false
+256 silly fetch manifest webpack@>= 4
+257 silly packumentCache full:https://registry.npmmirror.com/webpack cache-hit
+258 silly placeDep ROOT @storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0 OK for: @storybook/preset-create-react-app@10.3.1 want: 1.0.6--canary.9.0c3f3b7.0
+259 silly placeDep ROOT pnp-webpack-plugin@1.7.0 OK for: @storybook/preset-create-react-app@10.3.1 want: ^1.7.0
+260 silly fetch manifest endent@^2.0.1
+261 silly packumentCache full:https://registry.npmmirror.com/endent cache-miss
+262 silly fetch manifest react-docgen-typescript@^2.2.2
+263 silly packumentCache full:https://registry.npmmirror.com/react-docgen-typescript cache-miss
+264 silly fetch manifest ts-pnp@^1.1.6
+265 silly packumentCache full:https://registry.npmmirror.com/ts-pnp cache-miss
+266 http fetch GET 200 https://registry.npmmirror.com/ts-pnp 236ms (cache miss)
+267 silly packumentCache full:https://registry.npmmirror.com/ts-pnp set size:4350 disposed:false
+268 http fetch GET 200 https://registry.npmmirror.com/react-docgen-typescript 240ms (cache miss)
+269 silly packumentCache full:https://registry.npmmirror.com/react-docgen-typescript set size:30951 disposed:false
+270 http fetch GET 200 https://registry.npmmirror.com/endent 421ms (cache miss)
+271 silly packumentCache full:https://registry.npmmirror.com/endent set size:6869 disposed:false
+272 silly placeDep ROOT endent@2.1.0 OK for: @storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0 want: ^2.0.1
+273 silly placeDep ROOT react-docgen-typescript@2.4.0 OK for: @storybook/react-docgen-typescript-plugin@1.0.6--canary.9.0c3f3b7.0 want: ^2.2.2
+274 silly fetch manifest fast-json-parse@^1.0.3
+275 silly packumentCache full:https://registry.npmmirror.com/fast-json-parse cache-miss
+276 silly fetch manifest objectorarray@^1.0.5
+277 silly packumentCache full:https://registry.npmmirror.com/objectorarray cache-miss
+278 http fetch GET 200 https://registry.npmmirror.com/fast-json-parse 285ms (cache miss)
+279 silly packumentCache full:https://registry.npmmirror.com/fast-json-parse set size:2447 disposed:false
+280 http fetch GET 200 https://registry.npmmirror.com/objectorarray 287ms (cache miss)
+281 silly packumentCache full:https://registry.npmmirror.com/objectorarray set size:2418 disposed:false
+282 silly fetch manifest typescript@>= 4.9.x
+283 silly packumentCache full:https://registry.npmmirror.com/typescript cache-miss
+284 http fetch GET 200 https://registry.npmmirror.com/typescript 107ms (cache hit)
+285 silly packumentCache full:https://registry.npmmirror.com/typescript set size:14632989 disposed:false
+286 silly placeDep ROOT @storybook/builder-webpack5@10.3.1 OK for: @storybook/react-webpack5@10.3.1 want: 10.3.1
+287 silly placeDep ROOT @storybook/preset-react-webpack@10.3.1 OK for: @storybook/react-webpack5@10.3.1 want: 10.3.1
+288 silly placeDep ROOT @storybook/react@10.3.1 OK for: @storybook/react-webpack5@10.3.1 want: 10.3.1
+289 silly fetch manifest @storybook/core-webpack@10.3.1
+290 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fcore-webpack cache-miss
+291 silly fetch manifest css-loader@^7.1.2
+292 silly packumentCache full:https://registry.npmmirror.com/css-loader cache-miss
+293 silly fetch manifest es-module-lexer@^1.5.0
+294 silly packumentCache full:https://registry.npmmirror.com/es-module-lexer cache-miss
+295 silly fetch manifest fork-ts-checker-webpack-plugin@^9.1.0
+296 silly packumentCache full:https://registry.npmmirror.com/fork-ts-checker-webpack-plugin cache-miss
+297 silly fetch manifest magic-string@^0.30.5
+298 silly packumentCache full:https://registry.npmmirror.com/magic-string cache-miss
+299 silly fetch manifest style-loader@^4.0.0
+300 silly packumentCache full:https://registry.npmmirror.com/style-loader cache-miss
+301 silly fetch manifest webpack-dev-middleware@^6.1.2
+302 silly packumentCache full:https://registry.npmmirror.com/webpack-dev-middleware cache-miss
+303 http fetch GET 200 https://registry.npmmirror.com/magic-string 116ms (cache miss)
+304 silly packumentCache full:https://registry.npmmirror.com/magic-string set size:56351 disposed:false
+305 silly fetch manifest webpack-hot-middleware@^2.25.1
+306 silly packumentCache full:https://registry.npmmirror.com/webpack-hot-middleware cache-miss
+307 http fetch GET 200 https://registry.npmmirror.com/css-loader 133ms (cache miss)
+308 silly packumentCache full:https://registry.npmmirror.com/css-loader set size:72858 disposed:false
+309 silly fetch manifest webpack-virtual-modules@^0.6.0
+310 silly packumentCache full:https://registry.npmmirror.com/webpack-virtual-modules cache-miss
+311 http fetch GET 200 https://registry.npmmirror.com/webpack-dev-middleware 146ms (cache miss)
+312 silly packumentCache full:https://registry.npmmirror.com/webpack-dev-middleware set size:59935 disposed:false
+313 silly fetch manifest @storybook/core-webpack@10.3.1
+314 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fcore-webpack cache-miss
+315 http fetch GET 200 https://registry.npmmirror.com/es-module-lexer 203ms (cache miss)
+316 silly packumentCache full:https://registry.npmmirror.com/es-module-lexer set size:37250 disposed:false
+317 silly fetch manifest react-docgen@^7.1.1
+318 silly packumentCache full:https://registry.npmmirror.com/react-docgen cache-miss
+319 http fetch GET 200 https://registry.npmmirror.com/style-loader 298ms (cache miss)
+320 silly packumentCache full:https://registry.npmmirror.com/style-loader set size:33169 disposed:false
+321 silly fetch manifest tsconfig-paths@^4.2.0
+322 silly packumentCache full:https://registry.npmmirror.com/tsconfig-paths cache-miss
+323 http fetch GET 200 https://registry.npmmirror.com/fork-ts-checker-webpack-plugin 315ms (cache miss)
+324 silly packumentCache full:https://registry.npmmirror.com/fork-ts-checker-webpack-plugin set size:114591 disposed:false
+325 silly fetch manifest react-docgen@^8.0.2
+326 silly packumentCache full:https://registry.npmmirror.com/react-docgen cache-miss
+327 http fetch GET 200 https://registry.npmmirror.com/webpack-virtual-modules 191ms (cache miss)
+328 silly packumentCache full:https://registry.npmmirror.com/webpack-virtual-modules set size:15132 disposed:false
+329 http fetch GET 200 https://registry.npmmirror.com/webpack-hot-middleware 212ms (cache miss)
+330 silly packumentCache full:https://registry.npmmirror.com/webpack-hot-middleware set size:25641 disposed:false
+331 http fetch GET 200 https://registry.npmmirror.com/react-docgen 219ms (cache miss)
+332 silly packumentCache full:https://registry.npmmirror.com/react-docgen set size:43004 disposed:false
+333 http fetch GET 200 https://registry.npmmirror.com/react-docgen 187ms (cache miss)
+334 silly packumentCache full:https://registry.npmmirror.com/react-docgen set size:43004 disposed:false
+335 silly packumentCache full:https://registry.npmmirror.com/react-docgen dispose
+336 http fetch GET 200 https://registry.npmmirror.com/tsconfig-paths 230ms (cache miss)
+337 silly packumentCache full:https://registry.npmmirror.com/tsconfig-paths set size:31311 disposed:false
+338 http fetch GET 200 https://registry.npmmirror.com/@storybook%2fcore-webpack 24052ms (cache miss)
+339 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fcore-webpack set size:875299 disposed:false
+340 http fetch GET 200 https://registry.npmmirror.com/@storybook%2fcore-webpack 24390ms (cache miss)
+341 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fcore-webpack set size:875299 disposed:false
+342 silly packumentCache full:https://registry.npmmirror.com/@storybook%2fcore-webpack dispose
+343 silly fetch manifest @rspack/core@0.x || ^1.0.0 || ^2.0.0-0
+344 silly packumentCache full:https://registry.npmmirror.com/@rspack%2fcore cache-miss
+345 http fetch GET 200 https://registry.npmmirror.com/@rspack%2fcore 199ms (cache miss)
+346 silly packumentCache full:https://registry.npmmirror.com/@rspack%2fcore set size:728241 disposed:false
+347 silly fetch manifest @swc/helpers@>=0.5.1
+348 silly packumentCache full:https://registry.npmmirror.com/@swc%2fhelpers cache-miss
+349 http fetch GET 200 https://registry.npmmirror.com/@swc%2fhelpers 89ms (cache miss)
+350 silly packumentCache full:https://registry.npmmirror.com/@swc%2fhelpers set size:101651 disposed:false
+351 silly fetch manifest webpack@5
+352 silly packumentCache full:https://registry.npmmirror.com/webpack cache-hit
+353 silly fetch manifest typescript@>3.6.0
+354 silly packumentCache full:https://registry.npmmirror.com/typescript cache-miss
+355 http fetch GET 200 https://registry.npmmirror.com/typescript 79ms (cache hit)
+356 silly packumentCache full:https://registry.npmmirror.com/typescript set size:14632989 disposed:false
+357 silly placeDep ROOT @storybook/core-webpack@10.3.1 OK for: @storybook/builder-webpack5@10.3.1 want: 10.3.1
+358 silly placeDep node_modules/@storybook/builder-webpack5 css-loader@7.1.4 OK for: @storybook/builder-webpack5@10.3.1 want: ^7.1.2
+359 silly placeDep node_modules/@storybook/builder-webpack5 es-module-lexer@1.7.0 OK for: @storybook/builder-webpack5@10.3.1 want: ^1.5.0
+360 silly placeDep node_modules/@storybook/builder-webpack5 fork-ts-checker-webpack-plugin@9.1.0 OK for: @storybook/builder-webpack5@10.3.1 want: ^9.1.0
+361 silly placeDep node_modules/@storybook/builder-webpack5 magic-string@0.30.21 OK for: @storybook/builder-webpack5@10.3.1 want: ^0.30.5
+362 silly placeDep node_modules/@storybook/builder-webpack5 style-loader@4.0.0 OK for: @storybook/builder-webpack5@10.3.1 want: ^4.0.0
+363 silly placeDep node_modules/@storybook/builder-webpack5 webpack-dev-middleware@6.1.3 OK for: @storybook/builder-webpack5@10.3.1 want: ^6.1.2
+364 silly placeDep ROOT webpack-hot-middleware@2.26.1 OK for: @storybook/builder-webpack5@10.3.1 want: ^2.25.1
+365 silly placeDep ROOT webpack-virtual-modules@0.6.2 OK for: @storybook/builder-webpack5@10.3.1 want: ^0.6.0
+366 silly fetch manifest chokidar@^4.0.1
+367 silly packumentCache full:https://registry.npmmirror.com/chokidar cache-miss
+368 silly fetch manifest cosmiconfig@^8.2.0
+369 silly packumentCache full:https://registry.npmmirror.com/cosmiconfig cache-miss
+370 silly fetch manifest node-abort-controller@^3.0.1
+371 silly packumentCache full:https://registry.npmmirror.com/node-abort-controller cache-miss
+372 silly fetch manifest schema-utils@^3.1.1
+373 silly packumentCache full:https://registry.npmmirror.com/schema-utils cache-miss
+374 http fetch GET 200 https://registry.npmmirror.com/chokidar 102ms (cache miss)
+375 silly packumentCache full:https://registry.npmmirror.com/chokidar set size:40008 disposed:false
+376 http fetch GET 200 https://registry.npmmirror.com/node-abort-controller 150ms (cache miss)
+377 silly packumentCache full:https://registry.npmmirror.com/node-abort-controller set size:7714 disposed:false
+378 http fetch GET 200 https://registry.npmmirror.com/schema-utils 154ms (cache miss)
+379 silly packumentCache full:https://registry.npmmirror.com/schema-utils set size:25542 disposed:false
+380 http fetch GET 200 https://registry.npmmirror.com/cosmiconfig 161ms (cache miss)
+381 silly packumentCache full:https://registry.npmmirror.com/cosmiconfig set size:39585 disposed:false
+382 silly placeDep node_modules/@storybook/preset-react-webpack magic-string@0.30.21 OK for: @storybook/preset-react-webpack@10.3.1 want: ^0.30.5
+383 silly placeDep ROOT react-docgen@7.1.1 OK for: @storybook/preset-react-webpack@10.3.1 want: ^7.1.1
+384 silly placeDep node_modules/@storybook/preset-react-webpack tsconfig-paths@4.2.0 OK for: @storybook/preset-react-webpack@10.3.1 want: ^4.2.0
+385 silly fetch manifest @types/doctrine@^0.0.9
+386 silly packumentCache full:https://registry.npmmirror.com/@types%2fdoctrine cache-miss
+387 silly fetch manifest @types/resolve@^1.20.2
+388 silly packumentCache full:https://registry.npmmirror.com/@types%2fresolve cache-miss
+389 silly fetch manifest strip-indent@^4.0.0
+390 silly packumentCache full:https://registry.npmmirror.com/strip-indent cache-miss
+391 silly fetch manifest strip-bom@^3.0.0
+392 silly packumentCache full:https://registry.npmmirror.com/strip-bom cache-miss
+393 http fetch GET 200 https://registry.npmmirror.com/strip-bom 77ms (cache miss)
+394 silly packumentCache full:https://registry.npmmirror.com/strip-bom set size:4055 disposed:false
+395 http fetch GET 200 https://registry.npmmirror.com/strip-indent 79ms (cache miss)
+396 silly packumentCache full:https://registry.npmmirror.com/strip-indent set size:4685 disposed:false
+397 http fetch GET 200 https://registry.npmmirror.com/@types%2fresolve 86ms (cache miss)
+398 silly packumentCache full:https://registry.npmmirror.com/@types%2fresolve set size:7556 disposed:false
+399 http fetch GET 200 https://registry.npmmirror.com/@types%2fdoctrine 141ms (cache miss)
+400 silly packumentCache full:https://registry.npmmirror.com/@types%2fdoctrine set size:3871 disposed:false
+401 silly placeDep ROOT @storybook/global@5.0.0 OK for: @storybook/react@10.3.1 want: ^5.0.0
+402 silly placeDep node_modules/@storybook/react react-docgen@8.0.3 OK for: @storybook/react@10.3.1 want: ^8.0.2
+403 silly placeDep ROOT fast-json-parse@1.0.3 OK for: endent@2.1.0 want: ^1.0.3
+404 silly placeDep ROOT objectorarray@1.0.5 OK for: endent@2.1.0 want: ^1.0.5
+405 silly fetch manifest typescript@>=4.8.4 <6.0.0
+406 silly packumentCache full:https://registry.npmmirror.com/typescript cache-miss
+407 http fetch GET 200 https://registry.npmmirror.com/typescript 69ms (cache hit)
+408 silly packumentCache full:https://registry.npmmirror.com/typescript set size:14632989 disposed:false
+409 silly placeDep node_modules/eslint-plugin-storybook @typescript-eslint/utils@8.57.1 OK for: eslint-plugin-storybook@10.3.1 want: ^8.48.0
+410 silly fetch manifest @typescript-eslint/scope-manager@8.57.1
+411 silly packumentCache full:https://registry.npmmirror.com/@typescript-eslint%2fscope-manager cache-miss
+412 silly fetch manifest @typescript-eslint/types@8.57.1
+413 silly packumentCache full:https://registry.npmmirror.com/@typescript-eslint%2ftypes cache-miss
+414 silly fetch manifest @typescript-eslint/typescript-estree@8.57.1
+415 silly packumentCache full:https://registry.npmmirror.com/@typescript-eslint%2ftypescript-estree cache-miss
+416 http fetch GET 200 https://registry.npmmirror.com/@typescript-eslint%2fscope-manager 1013ms (cache miss)
+417 silly packumentCache full:https://registry.npmmirror.com/@typescript-eslint%2fscope-manager set size:2084092 disposed:false
+418 http fetch GET 200 https://registry.npmmirror.com/@typescript-eslint%2ftypes 1254ms (cache miss)
+419 silly packumentCache full:https://registry.npmmirror.com/@typescript-eslint%2ftypes set size:2012630 disposed:false
+420 http fetch GET 200 https://registry.npmmirror.com/@typescript-eslint%2ftypescript-estree 1669ms (cache miss)
+421 silly packumentCache full:https://registry.npmmirror.com/@typescript-eslint%2ftypescript-estree set size:2334391 disposed:false
+422 silly placeDep ROOT ts-pnp@1.2.0 OK for: pnp-webpack-plugin@1.7.0 want: ^1.1.6
+423 silly placeDep ROOT @types/doctrine@0.0.9 OK for: react-docgen@7.1.1 want: ^0.0.9
+424 silly placeDep node_modules/react-docgen @types/resolve@1.20.6 OK for: react-docgen@7.1.1 want: ^1.20.2
+425 silly placeDep node_modules/react-docgen strip-indent@4.1.1 OK for: react-docgen@7.1.1 want: ^4.0.0
+426 verbose stack Error: could not resolve
+426 verbose stack     at PlaceDep.failPeerConflict (D:\Program_Files\nvm\v22.12.0\node_modules\npm\node_modules\@npmcli\arborist\lib\place-dep.js:503:25)
+426 verbose stack     at new PlaceDep (D:\Program_Files\nvm\v22.12.0\node_modules\npm\node_modules\@npmcli\arborist\lib\place-dep.js:157:21)
+426 verbose stack     at #buildDepStep (D:\Program_Files\nvm\v22.12.0\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:920:18)
+426 verbose stack     at async Arborist.buildIdealTree (D:\Program_Files\nvm\v22.12.0\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:181:7)
+426 verbose stack     at async Promise.all (index 1)
+426 verbose stack     at async Arborist.reify (D:\Program_Files\nvm\v22.12.0\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:131:5)
+426 verbose stack     at async Install.exec (D:\Program_Files\nvm\v22.12.0\node_modules\npm\lib\commands\install.js:150:5)
+426 verbose stack     at async Npm.exec (D:\Program_Files\nvm\v22.12.0\node_modules\npm\lib\npm.js:207:9)
+426 verbose stack     at async module.exports (D:\Program_Files\nvm\v22.12.0\node_modules\npm\lib\cli\entry.js:74:5)
+427 error code ERESOLVE
+428 error ERESOLVE could not resolve
+429 error
+430 error While resolving: react-scripts@5.0.1
+430 error Found: typescript@5.9.3
+430 error node_modules/typescript
+430 error   dev typescript@"^5.9.3" from the root project
+430 error   peer typescript@">=3" from cosmiconfig-typescript-loader@1.0.9
+430 error   node_modules/cosmiconfig-typescript-loader
+430 error     cosmiconfig-typescript-loader@"^1.0.0" from @craco/craco@7.1.0
+430 error     node_modules/@craco/craco
+430 error       dev @craco/craco@"^7.1.0" from the root project
+430 error   9 more (fork-ts-checker-webpack-plugin, ts-node, tsutils, ...)
+430 error
+430 error Could not resolve dependency:
+430 error peerOptional typescript@"^3.2.1 || ^4" from react-scripts@5.0.1
+430 error node_modules/react-scripts
+430 error   react-scripts@"5.0.1" from the root project
+430 error   peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+430 error   node_modules/@craco/craco
+430 error     dev @craco/craco@"^7.1.0" from the root project
+430 error   1 more (@storybook/preset-create-react-app)
+430 error
+430 error Conflicting peer dependency: typescript@4.9.5
+430 error node_modules/typescript
+430 error   peerOptional typescript@"^3.2.1 || ^4" from react-scripts@5.0.1
+430 error   node_modules/react-scripts
+430 error     react-scripts@"5.0.1" from the root project
+430 error     peer react-scripts@"^5.0.0" from @craco/craco@7.1.0
+430 error     node_modules/@craco/craco
+430 error       dev @craco/craco@"^7.1.0" from the root project
+430 error     1 more (@storybook/preset-create-react-app)
+430 error
+430 error Fix the upstream dependency conflict, or retry
+430 error this command with --force or --legacy-peer-deps
+430 error to accept an incorrect (and potentially broken) dependency resolution.
+431 error
+431 error
+431 error For a full report see:
+431 error D:\Code\React\React体系课\wenjuan\.npm-cache\_logs\2026-03-23T03_32_24_092Z-eresolve-report.txt
+432 silly unfinished npm timer reify 1774236745813
+433 silly unfinished npm timer reify:loadTrees 1774236745816
+434 silly unfinished npm timer idealTree:buildDeps 1774236747752
+435 silly unfinished npm timer idealTree:node_modules/react-scripts 1774236876083
+436 verbose cwd D:\Code\React\React体系课\wenjuan
+437 verbose os Windows_NT 10.0.19045
+438 verbose node v22.12.0
+439 verbose npm  v10.9.0
+440 verbose exit 1
+441 verbose code 1
+442 error A complete log of this run can be found in: D:\Code\React\React体系课\wenjuan\.npm-cache\_logs\2026-03-23T03_32_24_092Z-debug-0.log

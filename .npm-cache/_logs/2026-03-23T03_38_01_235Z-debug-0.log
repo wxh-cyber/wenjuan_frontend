@@ -1,0 +1,12 @@
+0 verbose cli D:\Program_Files\nodejs\node.exe D:\Program_Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.12.0
+3 silly config load:file:D:\Program_Files\nvm\v22.12.0\node_modules\npm\npmrc
+4 silly config load:file:D:\Code\React\React体系课\wenjuan\.npmrc
+5 silly config load:file:C:\Users\Administrator\.npmrc
+6 silly config load:file:D:\Program_Files\node-v24.12.0-win-x64\node-v24.12.0-win-x64\node_global\etc\npmrc
+7 verbose title npm run storybook
+8 verbose argv "run" "storybook"
+9 verbose logfile logs-max:10 dir:D:\Code\React\React体系课\wenjuan\.npm-cache\_logs\2026-03-23T03_38_01_235Z-
+10 verbose logfile D:\Code\React\React体系课\wenjuan\.npm-cache\_logs\2026-03-23T03_38_01_235Z-debug-0.log
+11 silly logfile done cleaning log files
